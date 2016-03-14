@@ -56,6 +56,7 @@ mobiletowers-own [
   ;times
   datarecords
   radius
+  zone
 ]
 
 
@@ -88,9 +89,8 @@ people-own [
   remainingdist                    ;distance remaining to the next node
   nextwaypoint                     ;next way point for travlling
   dummy                            ;a counter which is used during the process
-                                   ;haschildren?
-                                   ;shopping?
-                                   ;shopcorxy
+  zone                             ;current zone: 1: residential; 2:work; 3:shop; 4:school
+
 ]
 
 ;*********SETUP*************
@@ -135,19 +135,19 @@ to setup-landuse
   ;setup landuse based on different colors
   set residential patches with
     [pycor <= 0 and pxcor >= 0]
-  ask residential [ set pcolor green + 2 ]
+  ask residential [ set pcolor 15 ]
 
   set workplace patches with
     [pycor >= 0 and pxcor <= 0]
-  ask workplace [ set pcolor blue + 2 ]
+  ask workplace [ set pcolor 25 ]
 
   set shopping patches with
     [pycor > 0 and pxcor > 0]
-  ask shopping [ set pcolor red + 2 ]
+  ask shopping [ set pcolor 35 ]
 
   set school patches with
     [pycor < 0 and pxcor < 0]
-  ask school [ set pcolor yellow + 2 ]
+  ask school [ set pcolor 45 ]
 end
 
 to setup-roadnetwork
@@ -207,6 +207,7 @@ to setup-population
         set homecorxy list (pxcor) (pycor)
         set currentlocation "home"
         set endofroute? true
+        set zone 1
         ;set workstarts 480 ; 8am in the morning
         ;set workinghours 540 ;working 9hrs a day
         ;choose a random place in the business area as the working place
@@ -381,6 +382,7 @@ to setup-mobiletowers
     ;set locycor ycor
 
     set radius mtradius
+    set zone [pcolor] of patch-here
   ]
 end
 
@@ -408,12 +410,12 @@ to go
   let origin []
   let desti []
   let status []   ;the status of "move" or "stop". Move: 1; Stop:0
-  ;send-car
-  ;check if cars can move whole distance
-  ;ifelse i < length(list-waypointsall) - 2 [
-  ;  set i i + 1
-  ;  set c1 item (i + 1) waypoint-all;list-waypointsall
-  if ticks >= 42000 [ stop ]
+                  ;send-car
+                  ;check if cars can move whole distance
+                  ;ifelse i < length(list-waypointsall) - 2 [
+                  ;  set i i + 1
+                  ;  set c1 item (i + 1) waypoint-all;list-waypointsall
+  if ticks >= 14400 [ stop ]
   if ticks = 0 [random-seed 100]
   ask people [
     ;get location based on the activity schedule
@@ -462,23 +464,28 @@ to go
     ]
     [set status 0
       if remainingdist != 0 [ ; if end of the route but small residual distance left.
-      movepeople_checkDistance
-    ]]
+        movepeople_checkDistance
+      ]]
 
     ;data simulator
     if mobiletowerdata? [
       datacollection-mobiletowers status
     ]
 
+    ;check zone location
+    set zone [pcolor] of patch-here
+
+
     ;this is a true record of the population agent
     file-open "agentdata.txt"
-    file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write who file-write (status) file-write xcor file-write ycor ;FILE-TYPE "\n"
-                                                                                                                                                 ;file-close-all
+    file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write who file-write (zone) file-write (status) file-write xcor file-write ycor ;FILE-TYPE "\n"
+
+                                                                                                                                                                   ;file-close-all
 
     ifelse any? mobiletowers in-radius ([radius] of one-of mobiletowers) [
       ifelse count mobiletowers in-radius ([radius] of one-of mobiletowers) > 1 [
-       ; print count mobiletowers in-radius ([radius] of one-of mobiletowers)
-        ask max-one-of mobiletowers [distance myself] [
+        ; if a turtle is covered by two toweres, find the nearest one
+        ask min-one-of mobiletowers [distance myself] [
 
           file-write who FILE-TYPE "\n"
         ]
@@ -488,7 +495,7 @@ to go
         file-write who FILE-TYPE "\n"
       ]
       ]] [
-    file-write "" FILE-TYPE "\n"
+          file-write "" FILE-TYPE "\n"
       ]
 
     file-close-all
@@ -500,7 +507,7 @@ to go
 
   if ticks mod 1440 = 0 [ file-flush ] ;update the output files when a day is completed.
 
-  if ticks > 2880 [stop]
+                                       ;if ticks > 2880 [stop]
 end
 
 
@@ -515,14 +522,28 @@ to datacollection-mobiletowers [status]
   set temp2 who             ;agent id for the travelling person
 
   if random-float 1 <= (avg_num_calls_perday / 1440) [
-    ask mobiletowers in-radius ([radius] of one-of mobiletowers) [ ;might need to update this if towers have their own unique radius
 
-      ;current netlogo tables only take two values
-      ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
-      file-open "mobiletowers.txt"
-      file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write status file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
-      file-close-all
-    ]
+
+      ifelse count mobiletowers in-radius ([radius] of one-of mobiletowers) > 1 [
+        ; if a turtle is covered by two toweres, find the nearest one
+        ask min-one-of mobiletowers [distance myself] [
+          ;current netlogo tables only take two values
+          ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
+          file-open "mobiletowers.txt"
+          ;total minutes; number of days; minutes of the day; agent id; mobile tower's people's id; mobile tower's location (zone); mobile tower's signal radius; mobile tower's own id; xcor; ycor
+          file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
+          file-close-all
+        ]
+      ][
+        ask mobiletowers in-radius ([radius] of one-of mobiletowers) [ ;might need to update this if towers have their own unique radius
+          ;current netlogo tables only take two values
+          ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
+          file-open "mobiletowers.txt"
+          ;total minutes; number of days; minutes of the day; agent id; mobile tower's people's id; mobile tower's location (zone); mobile tower's signal radius; mobile tower's own id; xcor; ycor
+          file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
+          file-close-all
+        ]
+      ]
   ]
 
 end
@@ -845,7 +866,7 @@ MONITOR
 206
 55
 Time
-word (floor ((ticks mod 1400) / 60)) \":\" ((ticks mod 1400) mod 60)
+word (floor ((ticks mod 1440) / 60)) \":\" ((ticks mod 1440) mod 60)
 17
 1
 11
