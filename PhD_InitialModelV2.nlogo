@@ -415,7 +415,7 @@ to go
                   ;ifelse i < length(list-waypointsall) - 2 [
                   ;  set i i + 1
                   ;  set c1 item (i + 1) waypoint-all;list-waypointsall
-  if ticks >= 14400 [ stop ]
+  ;if ticks >= 14400 [ stop ]
   if ticks = 0 [random-seed 100]
   ask people [
     ;get location based on the activity schedule
