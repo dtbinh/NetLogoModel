@@ -97,7 +97,7 @@ people-own [
 
 to setup
   clear-all
-  random-seed 5
+  random-seed 100
   set-default-shape nodes "dot"
   set-default-shape waypoints "dot"
   set-default-shape LocResidentials "house"
@@ -133,17 +133,16 @@ end
 
 to setup-landuse
   ;setup landuse based on different colors
-
-  set workplace patches with
-    [pycor >= 0 and pxcor < 0]
-  ask workplace [ set pcolor 25 ]
-
   set residential patches with
     [pycor <= 0 and pxcor >= 0]
   ask residential [ set pcolor 15 ]
 
+  set workplace patches with
+    [pycor >= 0 and pxcor <= 0]
+  ask workplace [ set pcolor 25 ]
+
   set shopping patches with
-    [pycor > 0 and pxcor >= 0]
+    [pycor > 0 and pxcor > 0]
   ask shopping [ set pcolor 35 ]
 
   set school patches with
@@ -355,76 +354,34 @@ to call_connectors [fromagent toagent]
 
 end
 
-to hat-mobiletowers [zones]
-  let topleftx []
-  let toplefty []
-  let bottomrightx []
-  let bottomrighty []
-  let towerx []
-  let towery []
-  let distx []
-  let disty []
-
-  ; get range of the zone
-  set topleftx min [pxcor] of zones
-  set toplefty max [pycor] of zones
-  set bottomrightx max [pxcor] of zones
-  set bottomrighty min [pycor] of zones
-
-  ; now calculate middle point of the zone
-  set towerx (topleftx + bottomrightx) / 2
-  set towery (toplefty + bottomrighty) / 2
-
-  set distx abs towerx
-  set disty abs towery
-
-  create-mobiletowers 1 [
-    setxy towerx towery
-    set color blue
-    set radius min list distx disty
-      ]
-
-end
-
 to setup-mobiletowers
-
   let mt_gridsize []
   let mtradius []
   let hordistance []
   let datatable table:make      ;if make table is here then all tower will share one table - this way naturally all data is collected.
 
-  ; here we choose the middle of a patch to hatch a mobile tower
-
-  ;workplace
-  ;min [pxcor] of workplace
-  ;min [pycor] of workplace
-  hat-mobiletowers residential
-  hat-mobiletowers workplace
-  hat-mobiletowers shopping
-  hat-mobiletowers school
-
-  ;set hordistance max-pxcor - min-pxcor
-  ;;currently all mobile towers have the same cover range
-  ;set mtradius hordistance / grid-size * grids_covered_vector / 2
-  ;set mt_gridsize ceiling (grid-size / grids_covered_vector) ;calculate the number of horizonal mt to be made
+  set hordistance max-pxcor - min-pxcor
+  ;currently all mobile towers have the same cover range
+  set mtradius hordistance / grid-size * grids_covered_vector / 2
+  set mt_gridsize ceiling (grid-size / grids_covered_vector) ;calculate the number of horizonal mt to be made
 
   ; generate mobiletower agents
-  ;ask patches with [abs pxcor <= (mt_gridsize / 2) and abs pycor <= (mt_gridsize / 2)][
-  ;  sprout-mobiletowers 1 [
-  ;    set color brown
-  ;    set size 2]
-  ;]
+  ask patches with [abs pxcor <= (mt_gridsize / 2) and abs pycor <= (mt_gridsize / 2)][
+    sprout-mobiletowers 1 [
+      set color brown
+      set size 2]
+  ]
 
   ;; spread the mobiletowers according to the size of the window
   ask mobiletowers [
-  ;  setxy (xcor * (max-pxcor) / (mt_gridsize / 2 ))
-  ;    (ycor * (max-pycor) / (mt_gridsize / 2 ))
+    setxy (xcor * (max-pxcor) / (mt_gridsize / 2 ))
+      (ycor * (max-pycor) / (mt_gridsize / 2 ))
     ;let datatable table:make     ;if make table is here then each tower will have their own table.
     set datarecords datatable
     ;set locxcor xcor
     ;set locycor ycor
 
-    ;set radius mtradius
+    set radius mtradius
     set zone [pcolor] of patch-here
   ]
 end
@@ -524,30 +481,29 @@ to go
     file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write who file-write (zone) file-write (status) file-write xcor file-write ycor ;FILE-TYPE "\n"
 
                                                                                                                                                                    ;file-close-all
-    ifelse distance min-one-of mobiletowers [distance myself] <= [radius] of min-one-of mobiletowers [distance myself] [
-      file-write [who] of min-one-of mobiletowers [distance myself] FILE-TYPE "\n" ] [
-      file-write "" FILE-TYPE "\n"]
 
-;    ifelse any? mobiletowers in-radius ([radius] of one-of mobiletowers) [
-;      ifelse count mobiletowers in-radius ([radius] of one-of mobiletowers) > 1 [
-;        ; if a turtle is covered by two toweres, find the nearest one
-;        ask min-one-of mobiletowers [distance myself] [
-;
-;          file-write who FILE-TYPE "\n"
-;        ]
-;      ] [
-;      ;print count mobiletowers in-radius ([radius] of one-of mobiletowers)
-;      ask mobiletowers in-radius ([radius] of one-of mobiletowers) [ ;assign a mobile tower code
-;        file-write who FILE-TYPE "\n"
-;      ]
-;      ]] [
-;    file-write "" FILE-TYPE "\n"
-;      ]
+    ifelse any? mobiletowers in-radius ([radius] of one-of mobiletowers) [
+      ifelse count mobiletowers in-radius ([radius] of one-of mobiletowers) > 1 [
+        ; if a turtle is covered by two toweres, find the nearest one
+        ask min-one-of mobiletowers [distance myself] [
+
+          file-write who FILE-TYPE "\n"
+        ]
+      ] [
+      ;print count mobiletowers in-radius ([radius] of one-of mobiletowers)
+      ask mobiletowers in-radius ([radius] of one-of mobiletowers) [ ;assign a mobile tower code
+        file-write who FILE-TYPE "\n"
+      ]
+      ]] [
+          file-write "" FILE-TYPE "\n"
+      ]
 
     file-close-all
   ]
 
+
   tick
+
 
   if ticks mod 1440 = 0 [ file-flush ] ;update the output files when a day is completed.
 
