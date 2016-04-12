@@ -1,4 +1,4 @@
-extensions [nw table CSV cf]
+extensions [nw table CSV cf time]
 ; cf:an extension for "case" functionality https://github.com/qiemem/ControlFlowExtension
 
 
@@ -18,9 +18,8 @@ globals [
   shopping      ;; agentset containing the patches that are shopping landuse
   workplace     ;; agentset containing the patches that are workplace buildings
   school        ;; agentset containing the patches that are school buildings
-                ;  mincounter    ;; a minute counter to be used for resetting the link colors between different activities.
-                ;  Origin
-                ;  Destin
+  cur_time      ;; give each tick a time so that other features can be extracted
+
 ]
 
 waypoints-own [
@@ -126,6 +125,9 @@ to setup
 
   ;input/output initialisation
   setup-fileIO
+
+  ; set a starting time
+  set cur_time time:create "2016/01/01 00:00"
 
   reset-ticks
 end
@@ -459,6 +461,7 @@ to go
                   ;  set i i + 1
                   ;  set c1 item (i + 1) waypoint-all;list-waypointsall
   ;if ticks >= 14400 [ stop ]
+
   if ticks = 0 [random-seed 100]
   ask people [
     ;get location based on the activity schedule
@@ -521,7 +524,7 @@ to go
 
     ;this is a true record of the population agent
     file-open "agentdata.txt"
-    file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write who file-write (zone) file-write (status) file-write xcor file-write ycor ;FILE-TYPE "\n"
+    file-write time:show cur_time "yyyy-MM-dd HH:mm" file-write int(ticks / 1440) file-write (ticks mod 1440) file-write who file-write (zone) file-write (status) file-write xcor file-write ycor ;FILE-TYPE "\n"
 
                                                                                                                                                                    ;file-close-all
     ifelse distance min-one-of mobiletowers [distance myself] <= [radius] of min-one-of mobiletowers [distance myself] [
@@ -549,6 +552,9 @@ to go
 
   tick
 
+
+  set cur_time time:plus cur_time 1 "minutes"
+
   if ticks mod 1440 = 0 [ file-flush ] ;update the output files when a day is completed.
 
                                        ;if ticks > 2880 [stop]
@@ -567,27 +573,33 @@ to datacollection-mobiletowers [status]
 
   if random-float 1 <= (avg_num_calls_perday / 1440) [
 
+    ifelse distance min-one-of mobiletowers [distance myself] <= [radius] of min-one-of mobiletowers [distance myself] [
+      ask min-one-of mobiletowers [distance myself] [
+      file-open "mobiletowers.txt"
+      file-write time:show cur_time "yyyy-MM-dd HH:mm" file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
+      file-close-all
+      ]] [ ]
 
-      ifelse count mobiletowers in-radius ([radius] of one-of mobiletowers) > 1 [
-        ; if a turtle is covered by two toweres, find the nearest one
-        ask min-one-of mobiletowers [distance myself] [
-          ;current netlogo tables only take two values
-          ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
-          file-open "mobiletowers.txt"
-          ;total minutes; number of days; minutes of the day; agent id; mobile tower's people's id; mobile tower's location (zone); mobile tower's signal radius; mobile tower's own id; xcor; ycor
-          file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
-          file-close-all
-        ]
-      ][
-        ask mobiletowers in-radius ([radius] of one-of mobiletowers) [ ;might need to update this if towers have their own unique radius
-          ;current netlogo tables only take two values
-          ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
-          file-open "mobiletowers.txt"
-          ;total minutes; number of days; minutes of the day; agent id; mobile tower's people's id; mobile tower's location (zone); mobile tower's signal radius; mobile tower's own id; xcor; ycor
-          file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
-          file-close-all
-        ]
-      ]
+;    ifelse count mobiletowers in-radius ([radius] of one-of mobiletowers) > 1 [
+;      ; if a turtle is covered by two toweres, find the nearest one
+;      ask min-one-of mobiletowers [distance myself] [
+;        ;current netlogo tables only take two values
+;        ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
+;        file-open "mobiletowers.txt"
+;        ;total minutes; number of days; minutes of the day; agent id; mobile tower's people's id; mobile tower's location (zone); mobile tower's signal radius; mobile tower's own id; xcor; ycor
+;        file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
+;        file-close-all
+;      ]
+;    ][
+;    ask mobiletowers in-radius ([radius] of one-of mobiletowers) [ ;might need to update this if towers have their own unique radius
+;                                                                   ;current netlogo tables only take two values
+;                                                                   ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
+;      file-open "mobiletowers.txt"
+;      ;total minutes; number of days; minutes of the day; agent id; mobile tower's people's id; mobile tower's location (zone); mobile tower's signal radius; mobile tower's own id; xcor; ycor
+;      file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
+;      file-close-all
+;    ]
+;    ]
   ]
 
 end
@@ -1284,7 +1296,7 @@ Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 
 @#$#@#$#@
-NetLogo 5.2.1
+NetLogo 5.3.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
