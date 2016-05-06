@@ -507,7 +507,7 @@
 506,school
 507,school
 508,school
-509,school
+509,work
 510,work
 511,work
 512,work
@@ -717,7 +717,7 @@
 716,work
 717,work
 718,work
-719,work
+719,shopping
 720,shopping
 721,shopping
 722,shopping
@@ -1106,7 +1106,7 @@
 1105,school
 1106,school
 1107,school
-1108,home
+1108,school
 1109,home
 1110,home
 1111,home
@@ -1887,7 +1887,7 @@
 1886,home
 1887,home
 1888,home
-1889,home
+1889,school
 1890,school
 1891,school
 1892,school
@@ -1946,8 +1946,8 @@
 1945,school
 1946,school
 1947,school
-1948,school
-1949,school
+1948,work
+1949,work
 1950,work
 1951,work
 1952,work
@@ -2155,9 +2155,9 @@
 2154,work
 2155,work
 2156,work
-2157,work
-2158,work
-2159,work
+2157,shopping
+2158,shopping
+2159,shopping
 2160,shopping
 2161,shopping
 2162,shopping
@@ -2214,9 +2214,9 @@
 2213,shopping
 2214,shopping
 2215,shopping
-2216,shopping
-2217,shopping
-2218,shopping
+2216,work
+2217,work
+2218,work
 2219,work
 2220,work
 2221,work
@@ -2484,9 +2484,9 @@
 2483,work
 2484,work
 2485,work
-2486,work
-2487,work
-2488,work
+2486,school
+2487,school
+2488,school
 2489,school
 2490,school
 2491,school
@@ -2544,9 +2544,9 @@
 2543,school
 2544,school
 2545,school
-2546,school
-2547,school
-2548,school
+2546,home
+2547,home
+2548,home
 2549,home
 2550,home
 2551,home
@@ -3386,7 +3386,7 @@
 3385,school
 3386,school
 3387,school
-3388,school
+3388,work
 3389,work
 3390,work
 3391,work
@@ -3595,8 +3595,8 @@
 3594,work
 3595,work
 3596,work
-3597,work
-3598,work
+3597,shopping
+3598,shopping
 3599,shopping
 3600,shopping
 3601,shopping
@@ -3655,7 +3655,7 @@
 3654,shopping
 3655,shopping
 3656,shopping
-3657,shopping
+3657,work
 3658,work
 3659,work
 3660,work
@@ -3924,7 +3924,7 @@
 3923,work
 3924,work
 3925,work
-3926,work
+3926,school
 3927,school
 3928,school
 3929,school
@@ -3983,8 +3983,8 @@
 3982,school
 3983,school
 3984,school
-3985,school
-3986,school
+3985,home
+3986,home
 3987,home
 3988,home
 3989,home
@@ -4767,7 +4767,7 @@
 4766,home
 4767,home
 4768,home
-4769,home
+4769,school
 4770,school
 4771,school
 4772,school
@@ -5096,7 +5096,7 @@
 5095,shopping
 5096,shopping
 5097,shopping
-5098,work
+5098,shopping
 5099,work
 5100,work
 5101,work
@@ -5366,7 +5366,7 @@
 5365,work
 5366,work
 5367,work
-5368,school
+5368,work
 5369,school
 5370,school
 5371,school
@@ -5425,8 +5425,8 @@
 5424,school
 5425,school
 5426,school
-5427,home
-5428,home
+5427,school
+5428,school
 5429,home
 5430,home
 5431,home
@@ -6207,7 +6207,7 @@
 6206,home
 6207,home
 6208,home
-6209,school
+6209,home
 6210,school
 6211,school
 6212,school
@@ -6267,7 +6267,7 @@
 6266,school
 6267,school
 6268,school
-6269,work
+6269,school
 6270,work
 6271,work
 6272,work
@@ -6476,8 +6476,8 @@
 6475,work
 6476,work
 6477,work
-6478,shopping
-6479,shopping
+6478,work
+6479,work
 6480,shopping
 6481,shopping
 6482,shopping
@@ -6536,8 +6536,8 @@
 6535,shopping
 6536,shopping
 6537,shopping
-6538,work
-6539,work
+6538,shopping
+6539,shopping
 6540,work
 6541,work
 6542,work
@@ -6806,8 +6806,8 @@
 6805,work
 6806,work
 6807,work
-6808,school
-6809,school
+6808,work
+6809,work
 6810,school
 6811,school
 6812,school
@@ -6866,7 +6866,7 @@
 6865,school
 6866,school
 6867,school
-6868,home
+6868,school
 6869,home
 6870,home
 6871,home
@@ -9146,7 +9146,7 @@
 9145,school
 9146,school
 9147,school
-9148,school
+9148,work
 9149,work
 9150,work
 9151,work
@@ -9356,7 +9356,7 @@
 9355,work
 9356,work
 9357,work
-9358,work
+9358,shopping
 9359,shopping
 9360,shopping
 9361,shopping
@@ -9416,7 +9416,7 @@
 9415,shopping
 9416,shopping
 9417,shopping
-9418,shopping
+9418,work
 9419,work
 9420,work
 9421,work
@@ -9686,7 +9686,7 @@
 9685,work
 9686,work
 9687,work
-9688,work
+9688,school
 9689,school
 9690,school
 9691,school
@@ -10527,7 +10527,7 @@
 10526,home
 10527,home
 10528,home
-10529,school
+10529,home
 10530,school
 10531,school
 10532,school
@@ -10586,8 +10586,8 @@
 10585,school
 10586,school
 10587,school
-10588,work
-10589,work
+10588,school
+10589,school
 10590,work
 10591,work
 10592,work
@@ -10795,9 +10795,9 @@
 10794,work
 10795,work
 10796,work
-10797,shopping
-10798,shopping
-10799,shopping
+10797,work
+10798,work
+10799,work
 10800,shopping
 10801,shopping
 10802,shopping
@@ -10855,9 +10855,9 @@
 10854,shopping
 10855,shopping
 10856,shopping
-10857,work
-10858,work
-10859,work
+10857,shopping
+10858,shopping
+10859,shopping
 10860,work
 10861,work
 10862,work
@@ -11124,10 +11124,10 @@
 11123,work
 11124,work
 11125,work
-11126,school
-11127,school
-11128,school
-11129,school
+11126,work
+11127,work
+11128,work
+11129,work
 11130,school
 11131,school
 11132,school
@@ -11184,10 +11184,10 @@
 11183,school
 11184,school
 11185,school
-11186,home
-11187,home
-11188,home
-11189,home
+11186,school
+11187,school
+11188,school
+11189,school
 11190,home
 11191,home
 11192,home
@@ -12236,7 +12236,7 @@
 12235,work
 12236,work
 12237,work
-12238,shopping
+12238,work
 12239,shopping
 12240,shopping
 12241,shopping
@@ -13407,7 +13407,7 @@
 13406,home
 13407,home
 13408,home
-13409,school
+13409,home
 13410,school
 13411,school
 13412,school
@@ -13466,7 +13466,7 @@
 13465,school
 13466,school
 13467,school
-13468,work
+13468,school
 13469,work
 13470,work
 13471,work
@@ -13735,7 +13735,7 @@
 13734,shopping
 13735,shopping
 13736,shopping
-13737,shopping
+13737,work
 13738,work
 13739,work
 13740,work
@@ -14004,7 +14004,7 @@
 14003,work
 14004,work
 14005,work
-14006,work
+14006,school
 14007,school
 14008,school
 14009,school
@@ -14064,7 +14064,7 @@
 14063,school
 14064,school
 14065,school
-14066,school
+14066,home
 14067,home
 14068,home
 14069,home
@@ -16287,7 +16287,7 @@
 16286,home
 16287,home
 16288,home
-16289,school
+16289,home
 16290,school
 16291,school
 16292,school
@@ -16346,7 +16346,7 @@
 16345,school
 16346,school
 16347,school
-16348,work
+16348,school
 16349,work
 16350,work
 16351,work
@@ -16555,8 +16555,8 @@
 16554,work
 16555,work
 16556,work
-16557,shopping
-16558,shopping
+16557,work
+16558,work
 16559,shopping
 16560,shopping
 16561,shopping
@@ -16614,9 +16614,9 @@
 16613,shopping
 16614,shopping
 16615,shopping
-16616,work
-16617,work
-16618,work
+16616,shopping
+16617,shopping
+16618,shopping
 16619,work
 16620,work
 16621,work
@@ -16884,8 +16884,8 @@
 16883,work
 16884,work
 16885,work
-16886,school
-16887,school
+16886,work
+16887,work
 16888,school
 16889,school
 16890,school
@@ -16943,9 +16943,9 @@
 16942,school
 16943,school
 16944,school
-16945,home
-16946,home
-16947,home
+16945,school
+16946,school
+16947,school
 16948,home
 16949,home
 16950,home
@@ -17786,7 +17786,7 @@
 17785,school
 17786,school
 17787,school
-17788,school
+17788,work
 17789,work
 17790,work
 17791,work
@@ -17995,7 +17995,7 @@
 17994,work
 17995,work
 17996,work
-17997,work
+17997,shopping
 17998,shopping
 17999,shopping
 18000,shopping
@@ -18324,7 +18324,7 @@
 18323,work
 18324,work
 18325,work
-18326,school
+18326,work
 18327,school
 18328,school
 18329,school
@@ -18383,7 +18383,7 @@
 18382,school
 18383,school
 18384,school
-18385,home
+18385,school
 18386,home
 18387,home
 18388,home
@@ -19437,7 +19437,7 @@
 19436,work
 19437,work
 19438,work
-19439,work
+19439,shopping
 19440,shopping
 19441,shopping
 19442,shopping
@@ -19496,7 +19496,7 @@
 19495,shopping
 19496,shopping
 19497,shopping
-19498,shopping
+19498,work
 19499,work
 19500,work
 19501,work
@@ -19766,7 +19766,7 @@
 19765,work
 19766,work
 19767,work
-19768,work
+19768,school
 19769,school
 19770,school
 19771,school
@@ -19825,7 +19825,7 @@
 19824,school
 19825,school
 19826,school
-19827,school
+19827,home
 19828,home
 19829,home
 19830,home
@@ -20607,7 +20607,7 @@
 20606,home
 20607,home
 20608,home
-20609,school
+20609,home
 20610,school
 20611,school
 20612,school
@@ -20667,7 +20667,7 @@
 20666,school
 20667,school
 20668,school
-20669,work
+20669,school
 20670,work
 20671,work
 20672,work
@@ -20876,7 +20876,7 @@
 20875,work
 20876,work
 20877,work
-20878,shopping
+20878,work
 20879,shopping
 20880,shopping
 20881,shopping
@@ -21205,7 +21205,7 @@
 21204,work
 21205,work
 21206,work
-21207,work
+21207,school
 21208,school
 21209,school
 21210,school
@@ -21264,8 +21264,8 @@
 21263,school
 21264,school
 21265,school
-21266,school
-21267,school
+21266,home
+21267,home
 21268,home
 21269,home
 21270,home
@@ -22106,7 +22106,7 @@
 22105,school
 22106,school
 22107,school
-22108,work
+22108,school
 22109,work
 22110,work
 22111,work
@@ -22315,7 +22315,7 @@
 22314,work
 22315,work
 22316,work
-22317,shopping
+22317,work
 22318,shopping
 22319,shopping
 22320,shopping
@@ -22374,7 +22374,7 @@
 22373,shopping
 22374,shopping
 22375,shopping
-22376,work
+22376,shopping
 22377,work
 22378,work
 22379,work
@@ -22643,8 +22643,8 @@
 22642,work
 22643,work
 22644,work
-22645,school
-22646,school
+22645,work
+22646,work
 22647,school
 22648,school
 22649,school
@@ -22703,7 +22703,7 @@
 22702,school
 22703,school
 22704,school
-22705,home
+22705,school
 22706,home
 22707,home
 22708,home
@@ -23487,7 +23487,7 @@
 23486,home
 23487,home
 23488,home
-23489,school
+23489,home
 23490,school
 23491,school
 23492,school
@@ -23816,7 +23816,7 @@
 23815,shopping
 23816,shopping
 23817,shopping
-23818,work
+23818,shopping
 23819,work
 23820,work
 23821,work
@@ -25585,7 +25585,7 @@
 25584,school
 25585,school
 25586,school
-25587,home
+25587,school
 25588,home
 25589,home
 25590,home
@@ -26427,7 +26427,7 @@
 26426,school
 26427,school
 26428,school
-26429,school
+26429,work
 26430,work
 26431,work
 26432,work
@@ -26636,7 +26636,7 @@
 26635,work
 26636,work
 26637,work
-26638,work
+26638,shopping
 26639,shopping
 26640,shopping
 26641,shopping
@@ -26696,7 +26696,7 @@
 26695,shopping
 26696,shopping
 26697,shopping
-26698,shopping
+26698,work
 26699,work
 26700,work
 26701,work
@@ -27866,7 +27866,7 @@
 27865,school
 27866,school
 27867,school
-27868,school
+27868,work
 27869,work
 27870,work
 27871,work
@@ -28075,8 +28075,8 @@
 28074,work
 28075,work
 28076,work
-28077,work
-28078,work
+28077,shopping
+28078,shopping
 28079,shopping
 28080,shopping
 28081,shopping
@@ -28135,8 +28135,8 @@
 28134,shopping
 28135,shopping
 28136,shopping
-28137,shopping
-28138,shopping
+28137,work
+28138,work
 28139,work
 28140,work
 28141,work
@@ -28404,9 +28404,9 @@
 28403,work
 28404,work
 28405,work
-28406,work
-28407,work
-28408,work
+28406,school
+28407,school
+28408,school
 28409,school
 28410,school
 28411,school
@@ -28463,9 +28463,9 @@
 28462,school
 28463,school
 28464,school
-28465,school
-28466,school
-28467,school
+28465,home
+28466,home
+28467,home
 28468,home
 28469,home
 28470,home
@@ -29247,7 +29247,7 @@
 29246,home
 29247,home
 29248,home
-29249,school
+29249,home
 29250,school
 29251,school
 29252,school
@@ -29306,7 +29306,7 @@
 29305,school
 29306,school
 29307,school
-29308,work
+29308,school
 29309,work
 29310,work
 29311,work
@@ -29516,7 +29516,7 @@
 29515,work
 29516,work
 29517,work
-29518,shopping
+29518,work
 29519,shopping
 29520,shopping
 29521,shopping
@@ -29575,8 +29575,8 @@
 29574,shopping
 29575,shopping
 29576,shopping
-29577,work
-29578,work
+29577,shopping
+29578,shopping
 29579,work
 29580,work
 29581,work
@@ -29845,8 +29845,8 @@
 29844,work
 29845,work
 29846,work
-29847,school
-29848,school
+29847,work
+29848,work
 29849,school
 29850,school
 29851,school
@@ -29904,9 +29904,9 @@
 29903,school
 29904,school
 29905,school
-29906,home
-29907,home
-29908,home
+29906,school
+29907,school
+29908,school
 29909,home
 29910,home
 29911,home
@@ -30956,7 +30956,7 @@
 30955,work
 30956,work
 30957,work
-30958,work
+30958,shopping
 30959,shopping
 30960,shopping
 30961,shopping
@@ -31016,7 +31016,7 @@
 31015,shopping
 31016,shopping
 31017,shopping
-31018,shopping
+31018,work
 31019,work
 31020,work
 31021,work
@@ -31286,7 +31286,7 @@
 31285,work
 31286,work
 31287,work
-31288,work
+31288,school
 31289,school
 31290,school
 31291,school
@@ -31345,7 +31345,7 @@
 31344,school
 31345,school
 31346,school
-31347,school
+31347,home
 31348,home
 31349,home
 31350,home
@@ -32186,7 +32186,7 @@
 32185,school
 32186,school
 32187,school
-32188,school
+32188,work
 32189,work
 32190,work
 32191,work
@@ -32395,8 +32395,8 @@
 32394,work
 32395,work
 32396,work
-32397,work
-32398,work
+32397,shopping
+32398,shopping
 32399,shopping
 32400,shopping
 32401,shopping
@@ -32454,9 +32454,9 @@
 32453,shopping
 32454,shopping
 32455,shopping
-32456,shopping
-32457,shopping
-32458,shopping
+32456,work
+32457,work
+32458,work
 32459,work
 32460,work
 32461,work
@@ -32724,8 +32724,8 @@
 32723,work
 32724,work
 32725,work
-32726,work
-32727,work
+32726,school
+32727,school
 32728,school
 32729,school
 32730,school
@@ -32784,7 +32784,7 @@
 32783,school
 32784,school
 32785,school
-32786,school
+32786,home
 32787,home
 32788,home
 32789,home
@@ -33626,7 +33626,7 @@
 33625,school
 33626,school
 33627,school
-33628,school
+33628,work
 33629,work
 33630,work
 33631,work
@@ -33895,7 +33895,7 @@
 33894,shopping
 33895,shopping
 33896,shopping
-33897,work
+33897,shopping
 33898,work
 33899,work
 33900,work
@@ -34165,7 +34165,7 @@
 34164,work
 34165,work
 34166,work
-34167,school
+34167,work
 34168,school
 34169,school
 34170,school
@@ -35066,7 +35066,7 @@
 35065,school
 35066,school
 35067,school
-35068,school
+35068,work
 35069,work
 35070,work
 35071,work
@@ -35275,7 +35275,7 @@
 35274,work
 35275,work
 35276,work
-35277,work
+35277,shopping
 35278,shopping
 35279,shopping
 35280,shopping
@@ -35335,7 +35335,7 @@
 35334,shopping
 35335,shopping
 35336,shopping
-35337,shopping
+35337,work
 35338,work
 35339,work
 35340,work
@@ -35605,7 +35605,7 @@
 35604,work
 35605,work
 35606,work
-35607,work
+35607,school
 35608,school
 35609,school
 35610,school
@@ -35664,8 +35664,8 @@
 35663,school
 35664,school
 35665,school
-35666,school
-35667,school
+35666,home
+35667,home
 35668,home
 35669,home
 35670,home
@@ -37046,7 +37046,7 @@
 37045,work
 37046,work
 37047,work
-37048,work
+37048,school
 37049,school
 37050,school
 37051,school
@@ -37106,7 +37106,7 @@
 37105,school
 37106,school
 37107,school
-37108,school
+37108,home
 37109,home
 37110,home
 37111,home
@@ -37887,7 +37887,7 @@
 37886,home
 37887,home
 37888,home
-37889,home
+37889,school
 37890,school
 37891,school
 37892,school
@@ -37946,8 +37946,8 @@
 37945,school
 37946,school
 37947,school
-37948,school
-37949,school
+37948,work
+37949,work
 37950,work
 37951,work
 37952,work
@@ -38156,7 +38156,7 @@
 38155,work
 38156,work
 38157,work
-38158,work
+38158,shopping
 38159,shopping
 38160,shopping
 38161,shopping
@@ -38215,7 +38215,7 @@
 38214,shopping
 38215,shopping
 38216,shopping
-38217,shopping
+38217,work
 38218,work
 38219,work
 38220,work
@@ -38484,7 +38484,7 @@
 38483,work
 38484,work
 38485,work
-38486,work
+38486,school
 38487,school
 38488,school
 38489,school
@@ -38544,7 +38544,7 @@
 38543,school
 38544,school
 38545,school
-38546,school
+38546,home
 38547,home
 38548,home
 38549,home
@@ -39927,7 +39927,7 @@
 39926,work
 39927,work
 39928,work
-39929,school
+39929,work
 39930,school
 39931,school
 39932,school
@@ -39987,7 +39987,7 @@
 39986,school
 39987,school
 39988,school
-39989,home
+39989,school
 39990,home
 39991,home
 39992,home
@@ -40767,7 +40767,7 @@
 40766,home
 40767,home
 40768,home
-40769,home
+40769,school
 40770,school
 40771,school
 40772,school
@@ -40827,7 +40827,7 @@
 40826,school
 40827,school
 40828,school
-40829,school
+40829,work
 40830,work
 40831,work
 40832,work
@@ -41096,7 +41096,7 @@
 41095,shopping
 41096,shopping
 41097,shopping
-41098,shopping
+41098,work
 41099,work
 41100,work
 41101,work
@@ -41366,7 +41366,7 @@
 41365,work
 41366,work
 41367,work
-41368,work
+41368,school
 41369,school
 41370,school
 41371,school
@@ -42805,7 +42805,7 @@
 42804,work
 42805,work
 42806,work
-42807,school
+42807,work
 42808,school
 42809,school
 42810,school
@@ -42865,7 +42865,7 @@
 42864,school
 42865,school
 42866,school
-42867,home
+42867,school
 42868,home
 42869,home
 42870,home
@@ -43706,7 +43706,7 @@
 43705,school
 43706,school
 43707,school
-43708,work
+43708,school
 43709,work
 43710,work
 43711,work
@@ -43975,7 +43975,7 @@
 43974,shopping
 43975,shopping
 43976,shopping
-43977,work
+43977,shopping
 43978,work
 43979,work
 43980,work
@@ -44245,7 +44245,7 @@
 44244,work
 44245,work
 44246,work
-44247,school
+44247,work
 44248,school
 44249,school
 44250,school
@@ -44304,8 +44304,8 @@
 44303,school
 44304,school
 44305,school
-44306,home
-44307,home
+44306,school
+44307,school
 44308,home
 44309,home
 44310,home
@@ -45087,7 +45087,7 @@
 45086,home
 45087,home
 45088,home
-45089,school
+45089,home
 45090,school
 45091,school
 45092,school
@@ -45147,7 +45147,7 @@
 45146,school
 45147,school
 45148,school
-45149,work
+45149,school
 45150,work
 45151,work
 45152,work
@@ -45356,7 +45356,7 @@
 45355,work
 45356,work
 45357,work
-45358,shopping
+45358,work
 45359,shopping
 45360,shopping
 45361,shopping
@@ -45744,7 +45744,7 @@
 45743,school
 45744,school
 45745,school
-45746,school
+45746,home
 45747,home
 45748,home
 45749,home
@@ -46586,7 +46586,7 @@
 46585,school
 46586,school
 46587,school
-46588,work
+46588,school
 46589,work
 46590,work
 46591,work
@@ -46796,7 +46796,7 @@
 46795,work
 46796,work
 46797,work
-46798,shopping
+46798,work
 46799,shopping
 46800,shopping
 46801,shopping
@@ -47125,7 +47125,7 @@
 47124,work
 47125,work
 47126,work
-47127,work
+47127,school
 47128,school
 47129,school
 47130,school
@@ -47184,8 +47184,8 @@
 47183,school
 47184,school
 47185,school
-47186,school
-47187,school
+47186,home
+47187,home
 47188,home
 47189,home
 47190,home
@@ -48566,7 +48566,7 @@
 48565,work
 48566,work
 48567,work
-48568,work
+48568,school
 48569,school
 48570,school
 48571,school
@@ -48626,7 +48626,7 @@
 48625,school
 48626,school
 48627,school
-48628,school
+48628,home
 48629,home
 48630,home
 48631,home
@@ -49467,7 +49467,7 @@
 49466,school
 49467,school
 49468,school
-49469,work
+49469,school
 49470,work
 49471,work
 49472,work
@@ -49736,7 +49736,7 @@
 49735,shopping
 49736,shopping
 49737,shopping
-49738,work
+49738,shopping
 49739,work
 49740,work
 49741,work
@@ -50005,7 +50005,7 @@
 50004,work
 50005,work
 50006,work
-50007,school
+50007,work
 50008,school
 50009,school
 50010,school
@@ -51176,7 +51176,7 @@
 51175,shopping
 51176,shopping
 51177,shopping
-51178,work
+51178,shopping
 51179,work
 51180,work
 51181,work
@@ -51446,7 +51446,7 @@
 51445,work
 51446,work
 51447,work
-51448,school
+51448,work
 51449,school
 51450,school
 51451,school
@@ -51505,7 +51505,7 @@
 51504,school
 51505,school
 51506,school
-51507,home
+51507,school
 51508,home
 51509,home
 51510,home
@@ -52287,7 +52287,7 @@
 52286,home
 52287,home
 52288,home
-52289,school
+52289,home
 52290,school
 52291,school
 52292,school
@@ -52347,7 +52347,7 @@
 52346,school
 52347,school
 52348,school
-52349,work
+52349,school
 52350,work
 52351,work
 52352,work
@@ -52556,7 +52556,7 @@
 52555,work
 52556,work
 52557,work
-52558,shopping
+52558,work
 52559,shopping
 52560,shopping
 52561,shopping
@@ -52615,8 +52615,8 @@
 52614,shopping
 52615,shopping
 52616,shopping
-52617,work
-52618,work
+52617,shopping
+52618,shopping
 52619,work
 52620,work
 52621,work
@@ -52885,7 +52885,7 @@
 52884,work
 52885,work
 52886,work
-52887,school
+52887,work
 52888,school
 52889,school
 52890,school
@@ -52944,8 +52944,8 @@
 52943,school
 52944,school
 52945,school
-52946,home
-52947,home
+52946,school
+52947,school
 52948,home
 52949,home
 52950,home
@@ -54055,7 +54055,7 @@
 54054,shopping
 54055,shopping
 54056,shopping
-54057,shopping
+54057,work
 54058,work
 54059,work
 54060,work
@@ -54325,7 +54325,7 @@
 54324,work
 54325,work
 54326,work
-54327,work
+54327,school
 54328,school
 54329,school
 54330,school
@@ -54384,7 +54384,7 @@
 54383,school
 54384,school
 54385,school
-54386,school
+54386,home
 54387,home
 54388,home
 54389,home
@@ -55437,7 +55437,7 @@
 55436,work
 55437,work
 55438,work
-55439,shopping
+55439,work
 55440,shopping
 55441,shopping
 55442,shopping
@@ -55497,7 +55497,7 @@
 55496,shopping
 55497,shopping
 55498,shopping
-55499,work
+55499,shopping
 55500,work
 55501,work
 55502,work
@@ -55766,7 +55766,7 @@
 55765,work
 55766,work
 55767,work
-55768,school
+55768,work
 55769,school
 55770,school
 55771,school
@@ -55825,8 +55825,8 @@
 55824,school
 55825,school
 55826,school
-55827,home
-55828,home
+55827,school
+55828,school
 55829,home
 55830,home
 55831,home
@@ -57205,7 +57205,7 @@
 57204,work
 57205,work
 57206,work
-57207,school
+57207,work
 57208,school
 57209,school
 57210,school
@@ -57264,8 +57264,8 @@
 57263,school
 57264,school
 57265,school
-57266,home
-57267,home
+57266,school
+57267,school
 57268,home
 57269,home
 57270,home
@@ -58107,7 +58107,7 @@
 58106,school
 58107,school
 58108,school
-58109,school
+58109,work
 58110,work
 58111,work
 58112,work
@@ -58316,8 +58316,8 @@
 58315,work
 58316,work
 58317,work
-58318,work
-58319,work
+58318,shopping
+58319,shopping
 58320,shopping
 58321,shopping
 58322,shopping
@@ -58375,9 +58375,9 @@
 58374,shopping
 58375,shopping
 58376,shopping
-58377,shopping
-58378,shopping
-58379,shopping
+58377,work
+58378,work
+58379,work
 58380,work
 58381,work
 58382,work
@@ -58644,10 +58644,10 @@
 58643,work
 58644,work
 58645,work
-58646,work
-58647,work
-58648,work
-58649,work
+58646,school
+58647,school
+58648,school
+58649,school
 58650,school
 58651,school
 58652,school
@@ -58704,10 +58704,10 @@
 58703,school
 58704,school
 58705,school
-58706,school
-58707,school
-58708,school
-58709,school
+58706,home
+58707,home
+58708,home
+58709,home
 58710,home
 58711,home
 58712,home
@@ -59547,7 +59547,7 @@
 59546,school
 59547,school
 59548,school
-59549,school
+59549,work
 59550,work
 59551,work
 59552,work
@@ -59757,7 +59757,7 @@
 59756,work
 59757,work
 59758,work
-59759,work
+59759,shopping
 59760,shopping
 59761,shopping
 59762,shopping
@@ -59816,7 +59816,7 @@
 59815,shopping
 59816,shopping
 59817,shopping
-59818,shopping
+59818,work
 59819,work
 59820,work
 59821,work
@@ -60085,7 +60085,7 @@
 60084,work
 60085,work
 60086,work
-60087,work
+60087,school
 60088,school
 60089,school
 60090,school
@@ -60144,8 +60144,8 @@
 60143,school
 60144,school
 60145,school
-60146,school
-60147,school
+60146,home
+60147,home
 60148,home
 60149,home
 60150,home
@@ -60927,7 +60927,7 @@
 60926,home
 60927,home
 60928,home
-60929,school
+60929,home
 60930,school
 60931,school
 60932,school
@@ -60987,7 +60987,7 @@
 60986,school
 60987,school
 60988,school
-60989,work
+60989,school
 60990,work
 60991,work
 60992,work
@@ -61196,7 +61196,7 @@
 61195,work
 61196,work
 61197,work
-61198,shopping
+61198,work
 61199,shopping
 61200,shopping
 61201,shopping
@@ -61255,8 +61255,8 @@
 61254,shopping
 61255,shopping
 61256,shopping
-61257,work
-61258,work
+61257,shopping
+61258,shopping
 61259,work
 61260,work
 61261,work
@@ -61525,8 +61525,8 @@
 61524,work
 61525,work
 61526,work
-61527,school
-61528,school
+61527,work
+61528,work
 61529,school
 61530,school
 61531,school
@@ -61585,8 +61585,8 @@
 61584,school
 61585,school
 61586,school
-61587,home
-61588,home
+61587,school
+61588,school
 61589,home
 61590,home
 61591,home
@@ -62367,7 +62367,7 @@
 62366,home
 62367,home
 62368,home
-62369,home
+62369,school
 62370,school
 62371,school
 62372,school
@@ -62426,8 +62426,8 @@
 62425,school
 62426,school
 62427,school
-62428,school
-62429,school
+62428,work
+62429,work
 62430,work
 62431,work
 62432,work
@@ -62635,9 +62635,9 @@
 62634,work
 62635,work
 62636,work
-62637,work
-62638,work
-62639,work
+62637,shopping
+62638,shopping
+62639,shopping
 62640,shopping
 62641,shopping
 62642,shopping
@@ -62694,9 +62694,9 @@
 62693,shopping
 62694,shopping
 62695,shopping
-62696,shopping
-62697,shopping
-62698,shopping
+62696,work
+62697,work
+62698,work
 62699,work
 62700,work
 62701,work
@@ -62964,9 +62964,9 @@
 62963,work
 62964,work
 62965,work
-62966,work
-62967,work
-62968,work
+62966,school
+62967,school
+62968,school
 62969,school
 62970,school
 62971,school
@@ -63024,8 +63024,8 @@
 63023,school
 63024,school
 63025,school
-63026,school
-63027,school
+63026,home
+63027,home
 63028,home
 63029,home
 63030,home
@@ -63867,7 +63867,7 @@
 63866,school
 63867,school
 63868,school
-63869,school
+63869,work
 63870,work
 63871,work
 63872,work
@@ -64076,8 +64076,8 @@
 64075,work
 64076,work
 64077,work
-64078,work
-64079,work
+64078,shopping
+64079,shopping
 64080,shopping
 64081,shopping
 64082,shopping
@@ -64135,8 +64135,8 @@
 64134,shopping
 64135,shopping
 64136,shopping
-64137,shopping
-64138,shopping
+64137,work
+64138,work
 64139,work
 64140,work
 64141,work
@@ -64405,8 +64405,8 @@
 64404,work
 64405,work
 64406,work
-64407,work
-64408,work
+64407,school
+64408,school
 64409,school
 64410,school
 64411,school
@@ -64465,7 +64465,7 @@
 64464,school
 64465,school
 64466,school
-64467,school
+64467,home
 64468,home
 64469,home
 64470,home
@@ -65306,7 +65306,7 @@
 65305,school
 65306,school
 65307,school
-65308,work
+65308,school
 65309,work
 65310,work
 65311,work
@@ -65515,8 +65515,8 @@
 65514,work
 65515,work
 65516,work
-65517,shopping
-65518,shopping
+65517,work
+65518,work
 65519,shopping
 65520,shopping
 65521,shopping
@@ -65575,7 +65575,7 @@
 65574,shopping
 65575,shopping
 65576,shopping
-65577,work
+65577,shopping
 65578,work
 65579,work
 65580,work
@@ -65904,7 +65904,7 @@
 65903,school
 65904,school
 65905,school
-65906,home
+65906,school
 65907,home
 65908,home
 65909,home
@@ -66687,7 +66687,7 @@
 66686,home
 66687,home
 66688,home
-66689,school
+66689,home
 66690,school
 66691,school
 66692,school
@@ -66746,7 +66746,7 @@
 66745,school
 66746,school
 66747,school
-66748,work
+66748,school
 66749,work
 66750,work
 66751,work
@@ -66956,7 +66956,7 @@
 66955,work
 66956,work
 66957,work
-66958,shopping
+66958,work
 66959,shopping
 66960,shopping
 66961,shopping
@@ -67015,7 +67015,7 @@
 67014,shopping
 67015,shopping
 67016,shopping
-67017,work
+67017,shopping
 67018,work
 67019,work
 67020,work
@@ -67284,7 +67284,7 @@
 67283,work
 67284,work
 67285,work
-67286,school
+67286,work
 67287,school
 67288,school
 67289,school
@@ -67344,7 +67344,7 @@
 67343,school
 67344,school
 67345,school
-67346,home
+67346,school
 67347,home
 67348,home
 67349,home
@@ -68127,7 +68127,7 @@
 68126,home
 68127,home
 68128,home
-68129,home
+68129,school
 68130,school
 68131,school
 68132,school
@@ -68186,7 +68186,7 @@
 68185,school
 68186,school
 68187,school
-68188,school
+68188,work
 68189,work
 68190,work
 68191,work
@@ -68396,7 +68396,7 @@
 68395,work
 68396,work
 68397,work
-68398,work
+68398,shopping
 68399,shopping
 68400,shopping
 68401,shopping
@@ -68455,8 +68455,8 @@
 68454,shopping
 68455,shopping
 68456,shopping
-68457,shopping
-68458,shopping
+68457,work
+68458,work
 68459,work
 68460,work
 68461,work
@@ -68725,8 +68725,8 @@
 68724,work
 68725,work
 68726,work
-68727,work
-68728,work
+68727,school
+68728,school
 68729,school
 68730,school
 68731,school
@@ -68785,7 +68785,7 @@
 68784,school
 68785,school
 68786,school
-68787,school
+68787,home
 68788,home
 68789,home
 68790,home
@@ -69567,7 +69567,7 @@
 69566,home
 69567,home
 69568,home
-69569,home
+69569,school
 69570,school
 69571,school
 69572,school
@@ -69627,7 +69627,7 @@
 69626,school
 69627,school
 69628,school
-69629,school
+69629,work
 69630,work
 69631,work
 69632,work
@@ -69837,7 +69837,7 @@
 69836,work
 69837,work
 69838,work
-69839,work
+69839,shopping
 69840,shopping
 69841,shopping
 69842,shopping
@@ -69897,7 +69897,7 @@
 69896,shopping
 69897,shopping
 69898,shopping
-69899,shopping
+69899,work
 69900,work
 69901,work
 69902,work
@@ -70226,7 +70226,7 @@
 70225,school
 70226,school
 70227,school
-70228,home
+70228,school
 70229,home
 70230,home
 70231,home
@@ -71007,7 +71007,7 @@
 71006,home
 71007,home
 71008,home
-71009,school
+71009,home
 71010,school
 71011,school
 71012,school
@@ -71066,8 +71066,8 @@
 71065,school
 71066,school
 71067,school
-71068,work
-71069,work
+71068,school
+71069,school
 71070,work
 71071,work
 71072,work
@@ -71275,8 +71275,8 @@
 71274,work
 71275,work
 71276,work
-71277,shopping
-71278,shopping
+71277,work
+71278,work
 71279,shopping
 71280,shopping
 71281,shopping
@@ -71335,7 +71335,7 @@
 71334,shopping
 71335,shopping
 71336,shopping
-71337,work
+71337,shopping
 71338,work
 71339,work
 71340,work
@@ -71605,7 +71605,7 @@
 71604,work
 71605,work
 71606,work
-71607,school
+71607,work
 71608,school
 71609,school
 71610,school
@@ -71664,8 +71664,8 @@
 71663,school
 71664,school
 71665,school
-71666,home
-71667,home
+71666,school
+71667,school
 71668,home
 71669,home
 71670,home
@@ -72447,7 +72447,7 @@
 72446,home
 72447,home
 72448,home
-72449,school
+72449,home
 72450,school
 72451,school
 72452,school
@@ -72776,7 +72776,7 @@
 72775,shopping
 72776,shopping
 72777,shopping
-72778,work
+72778,shopping
 72779,work
 72780,work
 72781,work
@@ -73046,7 +73046,7 @@
 73045,work
 73046,work
 73047,work
-73048,school
+73048,work
 73049,school
 73050,school
 73051,school
@@ -73105,8 +73105,8 @@
 73104,school
 73105,school
 73106,school
-73107,home
-73108,home
+73107,school
+73108,school
 73109,home
 73110,home
 73111,home
@@ -73887,7 +73887,7 @@
 73886,home
 73887,home
 73888,home
-73889,school
+73889,home
 73890,school
 73891,school
 73892,school
@@ -74156,7 +74156,7 @@
 74155,work
 74156,work
 74157,work
-74158,work
+74158,shopping
 74159,shopping
 74160,shopping
 74161,shopping
@@ -74216,7 +74216,7 @@
 74215,shopping
 74216,shopping
 74217,shopping
-74218,shopping
+74218,work
 74219,work
 74220,work
 74221,work
@@ -74485,7 +74485,7 @@
 74484,work
 74485,work
 74486,work
-74487,work
+74487,school
 74488,school
 74489,school
 74490,school
@@ -74545,7 +74545,7 @@
 74544,school
 74545,school
 74546,school
-74547,school
+74547,home
 74548,home
 74549,home
 74550,home
@@ -75386,7 +75386,7 @@
 75385,school
 75386,school
 75387,school
-75388,school
+75388,work
 75389,work
 75390,work
 75391,work
@@ -75595,7 +75595,7 @@
 75594,work
 75595,work
 75596,work
-75597,work
+75597,shopping
 75598,shopping
 75599,shopping
 75600,shopping
@@ -75654,8 +75654,8 @@
 75653,shopping
 75654,shopping
 75655,shopping
-75656,shopping
-75657,shopping
+75656,work
+75657,work
 75658,work
 75659,work
 75660,work
@@ -75923,9 +75923,9 @@
 75922,work
 75923,work
 75924,work
-75925,work
-75926,work
-75927,work
+75925,school
+75926,school
+75927,school
 75928,school
 75929,school
 75930,school
@@ -75982,9 +75982,9 @@
 75981,school
 75982,school
 75983,school
-75984,school
-75985,school
-75986,school
+75984,home
+75985,home
+75986,home
 75987,home
 75988,home
 75989,home
@@ -76826,7 +76826,7 @@
 76825,school
 76826,school
 76827,school
-76828,work
+76828,school
 76829,work
 76830,work
 76831,work
@@ -77095,7 +77095,7 @@
 77094,shopping
 77095,shopping
 77096,shopping
-77097,shopping
+77097,work
 77098,work
 77099,work
 77100,work
@@ -77365,7 +77365,7 @@
 77364,work
 77365,work
 77366,work
-77367,work
+77367,school
 77368,school
 77369,school
 77370,school
@@ -78207,7 +78207,7 @@
 78206,home
 78207,home
 78208,home
-78209,school
+78209,home
 78210,school
 78211,school
 78212,school
@@ -78266,7 +78266,7 @@
 78265,school
 78266,school
 78267,school
-78268,work
+78268,school
 78269,work
 78270,work
 78271,work
@@ -78476,7 +78476,7 @@
 78475,work
 78476,work
 78477,work
-78478,shopping
+78478,work
 78479,shopping
 78480,shopping
 78481,shopping
@@ -78535,7 +78535,7 @@
 78534,shopping
 78535,shopping
 78536,shopping
-78537,work
+78537,shopping
 78538,work
 78539,work
 78540,work
@@ -78804,8 +78804,8 @@
 78803,work
 78804,work
 78805,work
-78806,school
-78807,school
+78806,work
+78807,work
 78808,school
 78809,school
 78810,school
@@ -78864,8 +78864,8 @@
 78863,school
 78864,school
 78865,school
-78866,home
-78867,home
+78866,school
+78867,school
 78868,home
 78869,home
 78870,home
@@ -79647,7 +79647,7 @@
 79646,home
 79647,home
 79648,home
-79649,school
+79649,home
 79650,school
 79651,school
 79652,school
@@ -79706,8 +79706,8 @@
 79705,school
 79706,school
 79707,school
-79708,work
-79709,work
+79708,school
+79709,school
 79710,work
 79711,work
 79712,work
@@ -79916,8 +79916,8 @@
 79915,work
 79916,work
 79917,work
-79918,shopping
-79919,shopping
+79918,work
+79919,work
 79920,shopping
 79921,shopping
 79922,shopping
@@ -79975,8 +79975,8 @@
 79974,shopping
 79975,shopping
 79976,shopping
-79977,work
-79978,work
+79977,shopping
+79978,shopping
 79979,work
 79980,work
 79981,work
@@ -80244,9 +80244,9 @@
 80243,work
 80244,work
 80245,work
-80246,school
-80247,school
-80248,school
+80246,work
+80247,work
+80248,work
 80249,school
 80250,school
 80251,school
@@ -80303,10 +80303,10 @@
 80302,school
 80303,school
 80304,school
-80305,home
-80306,home
-80307,home
-80308,home
+80305,school
+80306,school
+80307,school
+80308,school
 80309,home
 80310,home
 80311,home
@@ -81684,7 +81684,7 @@
 81683,work
 81684,work
 81685,work
-81686,school
+81686,work
 81687,school
 81688,school
 81689,school
@@ -81743,7 +81743,7 @@
 81742,school
 81743,school
 81744,school
-81745,home
+81745,school
 81746,home
 81747,home
 81748,home
@@ -82587,7 +82587,7 @@
 82586,school
 82587,school
 82588,school
-82589,work
+82589,school
 82590,work
 82591,work
 82592,work
@@ -82796,7 +82796,7 @@
 82795,work
 82796,work
 82797,work
-82798,shopping
+82798,work
 82799,shopping
 82800,shopping
 82801,shopping
@@ -82855,7 +82855,7 @@
 82854,shopping
 82855,shopping
 82856,shopping
-82857,work
+82857,shopping
 82858,work
 82859,work
 82860,work
@@ -83125,7 +83125,7 @@
 83124,work
 83125,work
 83126,work
-83127,school
+83127,work
 83128,school
 83129,school
 83130,school
@@ -83184,7 +83184,7 @@
 83183,school
 83184,school
 83185,school
-83186,home
+83186,school
 83187,home
 83188,home
 83189,home
@@ -83967,7 +83967,7 @@
 83966,home
 83967,home
 83968,home
-83969,home
+83969,school
 83970,school
 83971,school
 83972,school
@@ -84027,7 +84027,7 @@
 84026,school
 84027,school
 84028,school
-84029,school
+84029,work
 84030,work
 84031,work
 84032,work
@@ -84236,8 +84236,8 @@
 84235,work
 84236,work
 84237,work
-84238,work
-84239,work
+84238,shopping
+84239,shopping
 84240,shopping
 84241,shopping
 84242,shopping
@@ -84296,7 +84296,7 @@
 84295,shopping
 84296,shopping
 84297,shopping
-84298,shopping
+84298,work
 84299,work
 84300,work
 84301,work
@@ -84565,8 +84565,8 @@
 84564,work
 84565,work
 84566,work
-84567,work
-84568,work
+84567,school
+84568,school
 84569,school
 84570,school
 84571,school
@@ -84625,8 +84625,8 @@
 84624,school
 84625,school
 84626,school
-84627,school
-84628,school
+84627,home
+84628,home
 84629,home
 84630,home
 84631,home
@@ -85407,7 +85407,7 @@
 85406,home
 85407,home
 85408,home
-85409,home
+85409,school
 85410,school
 85411,school
 85412,school
@@ -85466,8 +85466,8 @@
 85465,school
 85466,school
 85467,school
-85468,school
-85469,school
+85468,work
+85469,work
 85470,work
 85471,work
 85472,work
@@ -85675,8 +85675,8 @@
 85674,work
 85675,work
 85676,work
-85677,work
-85678,work
+85677,shopping
+85678,shopping
 85679,shopping
 85680,shopping
 85681,shopping
@@ -85735,7 +85735,7 @@
 85734,shopping
 85735,shopping
 85736,shopping
-85737,shopping
+85737,work
 85738,work
 85739,work
 85740,work
@@ -86847,7 +86847,7 @@
 86846,home
 86847,home
 86848,home
-86849,home
+86849,school
 86850,school
 86851,school
 86852,school
@@ -86906,8 +86906,8 @@
 86905,school
 86906,school
 86907,school
-86908,school
-86909,school
+86908,work
+86909,work
 86910,work
 86911,work
 86912,work
@@ -87115,8 +87115,8 @@
 87114,work
 87115,work
 87116,work
-87117,work
-87118,work
+87117,shopping
+87118,shopping
 87119,shopping
 87120,shopping
 87121,shopping
@@ -87174,8 +87174,8 @@
 87173,shopping
 87174,shopping
 87175,shopping
-87176,shopping
-87177,shopping
+87176,work
+87177,work
 87178,work
 87179,work
 87180,work
@@ -87443,9 +87443,9 @@
 87442,work
 87443,work
 87444,work
-87445,work
-87446,work
-87447,work
+87445,school
+87446,school
+87447,school
 87448,school
 87449,school
 87450,school
@@ -87502,9 +87502,9 @@
 87501,school
 87502,school
 87503,school
-87504,school
-87505,school
-87506,school
+87504,home
+87505,home
+87506,home
 87507,home
 87508,home
 87509,home
@@ -88287,7 +88287,7 @@
 88286,home
 88287,home
 88288,home
-88289,home
+88289,school
 88290,school
 88291,school
 88292,school
@@ -88886,7 +88886,7 @@
 88885,work
 88886,work
 88887,work
-88888,work
+88888,school
 88889,school
 88890,school
 88891,school
@@ -88945,8 +88945,8 @@
 88944,school
 88945,school
 88946,school
-88947,school
-88948,school
+88947,home
+88948,home
 88949,home
 88950,home
 88951,home
@@ -89727,7 +89727,7 @@
 89726,home
 89727,home
 89728,home
-89729,school
+89729,home
 89730,school
 89731,school
 89732,school
@@ -89786,7 +89786,7 @@
 89785,school
 89786,school
 89787,school
-89788,work
+89788,school
 89789,work
 89790,work
 89791,work
@@ -89996,7 +89996,7 @@
 89995,work
 89996,work
 89997,work
-89998,shopping
+89998,work
 89999,shopping
 90000,shopping
 90001,shopping
@@ -90055,7 +90055,7 @@
 90054,shopping
 90055,shopping
 90056,shopping
-90057,work
+90057,shopping
 90058,work
 90059,work
 90060,work
@@ -90324,8 +90324,8 @@
 90323,work
 90324,work
 90325,work
-90326,school
-90327,school
+90326,work
+90327,work
 90328,school
 90329,school
 90330,school
@@ -90384,8 +90384,8 @@
 90383,school
 90384,school
 90385,school
-90386,home
-90387,home
+90386,school
+90387,school
 90388,home
 90389,home
 90390,home
@@ -91167,7 +91167,7 @@
 91166,home
 91167,home
 91168,home
-91169,school
+91169,home
 91170,school
 91171,school
 91172,school
@@ -91496,7 +91496,7 @@
 91495,shopping
 91496,shopping
 91497,shopping
-91498,shopping
+91498,work
 91499,work
 91500,work
 91501,work
@@ -91766,7 +91766,7 @@
 91765,work
 91766,work
 91767,work
-91768,work
+91768,school
 91769,school
 91770,school
 91771,school
@@ -91825,8 +91825,8 @@
 91824,school
 91825,school
 91826,school
-91827,school
-91828,school
+91827,home
+91828,home
 91829,home
 91830,home
 91831,home
@@ -92876,7 +92876,7 @@
 92875,work
 92876,work
 92877,work
-92878,work
+92878,shopping
 92879,shopping
 92880,shopping
 92881,shopping
@@ -92936,7 +92936,7 @@
 92935,shopping
 92936,shopping
 92937,shopping
-92938,shopping
+92938,work
 92939,work
 92940,work
 92941,work
@@ -93205,8 +93205,8 @@
 93204,work
 93205,work
 93206,work
-93207,work
-93208,work
+93207,school
+93208,school
 93209,school
 93210,school
 93211,school
@@ -93264,8 +93264,8 @@
 93263,school
 93264,school
 93265,school
-93266,school
-93267,school
+93266,home
+93267,home
 93268,home
 93269,home
 93270,home
@@ -94106,7 +94106,7 @@
 94105,school
 94106,school
 94107,school
-94108,work
+94108,school
 94109,work
 94110,work
 94111,work
@@ -94315,7 +94315,7 @@
 94314,work
 94315,work
 94316,work
-94317,shopping
+94317,work
 94318,shopping
 94319,shopping
 94320,shopping
@@ -95547,7 +95547,7 @@
 95546,school
 95547,school
 95548,school
-95549,work
+95549,school
 95550,work
 95551,work
 95552,work
@@ -95756,8 +95756,8 @@
 95755,work
 95756,work
 95757,work
-95758,shopping
-95759,shopping
+95758,work
+95759,work
 95760,shopping
 95761,shopping
 95762,shopping
@@ -95815,8 +95815,8 @@
 95814,shopping
 95815,shopping
 95816,shopping
-95817,work
-95818,work
+95817,shopping
+95818,shopping
 95819,work
 95820,work
 95821,work
@@ -96084,8 +96084,8 @@
 96083,work
 96084,work
 96085,work
-96086,school
-96087,school
+96086,work
+96087,work
 96088,school
 96089,school
 96090,school
@@ -96144,7 +96144,7 @@
 96143,school
 96144,school
 96145,school
-96146,home
+96146,school
 96147,home
 96148,home
 96149,home
@@ -97257,7 +97257,7 @@
 97256,shopping
 97257,shopping
 97258,shopping
-97259,work
+97259,shopping
 97260,work
 97261,work
 97262,work
@@ -97526,7 +97526,7 @@
 97525,work
 97526,work
 97527,work
-97528,school
+97528,work
 97529,school
 97530,school
 97531,school
@@ -97585,7 +97585,7 @@
 97584,school
 97585,school
 97586,school
-97587,home
+97587,school
 97588,home
 97589,home
 97590,home
@@ -98637,7 +98637,7 @@
 98636,work
 98637,work
 98638,work
-98639,shopping
+98639,work
 98640,shopping
 98641,shopping
 98642,shopping
@@ -98696,8 +98696,8 @@
 98695,shopping
 98696,shopping
 98697,shopping
-98698,work
-98699,work
+98698,shopping
+98699,shopping
 98700,work
 98701,work
 98702,work
@@ -98965,8 +98965,8 @@
 98964,work
 98965,work
 98966,work
-98967,school
-98968,school
+98967,work
+98968,work
 98969,school
 98970,school
 98971,school
@@ -99024,9 +99024,9 @@
 99023,school
 99024,school
 99025,school
-99026,home
-99027,home
-99028,home
+99026,school
+99027,school
+99028,school
 99029,home
 99030,home
 99031,home
@@ -99807,7 +99807,7 @@
 99806,home
 99807,home
 99808,home
-99809,home
+99809,school
 99810,school
 99811,school
 99812,school
@@ -100076,7 +100076,7 @@
 100075,work
 100076,work
 100077,work
-100078,work
+100078,shopping
 100079,shopping
 100080,shopping
 100081,shopping
@@ -101515,7 +101515,7 @@
 101514,work
 101515,work
 101516,work
-101517,work
+101517,shopping
 101518,shopping
 101519,shopping
 101520,shopping
@@ -101575,7 +101575,7 @@
 101574,shopping
 101575,shopping
 101576,shopping
-101577,shopping
+101577,work
 101578,work
 101579,work
 101580,work
@@ -101845,7 +101845,7 @@
 101844,work
 101845,work
 101846,work
-101847,work
+101847,school
 101848,school
 101849,school
 101850,school
@@ -101905,7 +101905,7 @@
 101904,school
 101905,school
 101906,school
-101907,school
+101907,home
 101908,home
 101909,home
 101910,home
@@ -102956,7 +102956,7 @@
 102955,work
 102956,work
 102957,work
-102958,work
+102958,shopping
 102959,shopping
 102960,shopping
 102961,shopping
@@ -103345,7 +103345,7 @@
 103344,school
 103345,school
 103346,school
-103347,home
+103347,school
 103348,home
 103349,home
 103350,home
@@ -104186,7 +104186,7 @@
 104185,school
 104186,school
 104187,school
-104188,school
+104188,work
 104189,work
 104190,work
 104191,work
@@ -104396,7 +104396,7 @@
 104395,work
 104396,work
 104397,work
-104398,work
+104398,shopping
 104399,shopping
 104400,shopping
 104401,shopping
@@ -104456,7 +104456,7 @@
 104455,shopping
 104456,shopping
 104457,shopping
-104458,shopping
+104458,work
 104459,work
 104460,work
 104461,work
@@ -104725,7 +104725,7 @@
 104724,work
 104725,work
 104726,work
-104727,work
+104727,school
 104728,school
 104729,school
 104730,school
@@ -104784,8 +104784,8 @@
 104783,school
 104784,school
 104785,school
-104786,school
-104787,school
+104786,home
+104787,home
 104788,home
 104789,home
 104790,home
@@ -105567,7 +105567,7 @@
 105566,home
 105567,home
 105568,home
-105569,school
+105569,home
 105570,school
 105571,school
 105572,school
@@ -105626,8 +105626,8 @@
 105625,school
 105626,school
 105627,school
-105628,work
-105629,work
+105628,school
+105629,school
 105630,work
 105631,work
 105632,work
@@ -105835,9 +105835,9 @@
 105834,work
 105835,work
 105836,work
-105837,shopping
-105838,shopping
-105839,shopping
+105837,work
+105838,work
+105839,work
 105840,shopping
 105841,shopping
 105842,shopping
@@ -105894,10 +105894,10 @@
 105893,shopping
 105894,shopping
 105895,shopping
-105896,work
-105897,work
-105898,work
-105899,work
+105896,shopping
+105897,shopping
+105898,shopping
+105899,shopping
 105900,work
 105901,work
 105902,work
@@ -106163,10 +106163,10 @@
 106162,work
 106163,work
 106164,work
-106165,school
-106166,school
-106167,school
-106168,school
+106165,work
+106166,work
+106167,work
+106168,work
 106169,school
 106170,school
 106171,school
@@ -106223,10 +106223,10 @@
 106222,school
 106223,school
 106224,school
-106225,home
-106226,home
-106227,home
-106228,home
+106225,school
+106226,school
+106227,school
+106228,school
 106229,home
 106230,home
 106231,home
@@ -107007,7 +107007,7 @@
 107006,home
 107007,home
 107008,home
-107009,school
+107009,home
 107010,school
 107011,school
 107012,school
@@ -107066,8 +107066,8 @@
 107065,school
 107066,school
 107067,school
-107068,work
-107069,work
+107068,school
+107069,school
 107070,work
 107071,work
 107072,work
@@ -107275,8 +107275,8 @@
 107274,work
 107275,work
 107276,work
-107277,shopping
-107278,shopping
+107277,work
+107278,work
 107279,shopping
 107280,shopping
 107281,shopping
@@ -107335,8 +107335,8 @@
 107334,shopping
 107335,shopping
 107336,shopping
-107337,work
-107338,work
+107337,shopping
+107338,shopping
 107339,work
 107340,work
 107341,work
@@ -107604,8 +107604,8 @@
 107603,work
 107604,work
 107605,work
-107606,school
-107607,school
+107606,work
+107607,work
 107608,school
 107609,school
 107610,school
@@ -107663,8 +107663,8 @@
 107662,school
 107663,school
 107664,school
-107665,home
-107666,home
+107665,school
+107666,school
 107667,home
 107668,home
 107669,home
@@ -108447,7 +108447,7 @@
 108446,home
 108447,home
 108448,home
-108449,home
+108449,school
 108450,school
 108451,school
 108452,school
@@ -108506,7 +108506,7 @@
 108505,school
 108506,school
 108507,school
-108508,school
+108508,work
 108509,work
 108510,work
 108511,work
@@ -108715,7 +108715,7 @@
 108714,work
 108715,work
 108716,work
-108717,work
+108717,shopping
 108718,shopping
 108719,shopping
 108720,shopping
@@ -109044,7 +109044,7 @@
 109043,work
 109044,work
 109045,work
-109046,school
+109046,work
 109047,school
 109048,school
 109049,school
@@ -109103,7 +109103,7 @@
 109102,school
 109103,school
 109104,school
-109105,home
+109105,school
 109106,home
 109107,home
 109108,home
@@ -109887,7 +109887,7 @@
 109886,home
 109887,home
 109888,home
-109889,school
+109889,home
 109890,school
 109891,school
 109892,school
@@ -109947,7 +109947,7 @@
 109946,school
 109947,school
 109948,school
-109949,work
+109949,school
 109950,work
 109951,work
 109952,work
@@ -110156,8 +110156,8 @@
 110155,work
 110156,work
 110157,work
-110158,shopping
-110159,shopping
+110158,work
+110159,work
 110160,shopping
 110161,shopping
 110162,shopping
@@ -110216,7 +110216,7 @@
 110215,shopping
 110216,shopping
 110217,shopping
-110218,work
+110218,shopping
 110219,work
 110220,work
 110221,work
@@ -110485,7 +110485,7 @@
 110484,work
 110485,work
 110486,work
-110487,school
+110487,work
 110488,school
 110489,school
 110490,school
@@ -110545,7 +110545,7 @@
 110544,school
 110545,school
 110546,school
-110547,home
+110547,school
 110548,home
 110549,home
 110550,home
@@ -111327,7 +111327,7 @@
 111326,home
 111327,home
 111328,home
-111329,home
+111329,school
 111330,school
 111331,school
 111332,school
@@ -111386,8 +111386,8 @@
 111385,school
 111386,school
 111387,school
-111388,school
-111389,school
+111388,work
+111389,work
 111390,work
 111391,work
 111392,work
@@ -111596,7 +111596,7 @@
 111595,work
 111596,work
 111597,work
-111598,work
+111598,shopping
 111599,shopping
 111600,shopping
 111601,shopping
@@ -111655,7 +111655,7 @@
 111654,shopping
 111655,shopping
 111656,shopping
-111657,shopping
+111657,work
 111658,work
 111659,work
 111660,work
@@ -111924,7 +111924,7 @@
 111923,work
 111924,work
 111925,work
-111926,work
+111926,school
 111927,school
 111928,school
 111929,school
@@ -111983,7 +111983,7 @@
 111982,school
 111983,school
 111984,school
-111985,school
+111985,home
 111986,home
 111987,home
 111988,home
@@ -112767,7 +112767,7 @@
 112766,home
 112767,home
 112768,home
-112769,home
+112769,school
 112770,school
 112771,school
 112772,school
@@ -112826,8 +112826,8 @@
 112825,school
 112826,school
 112827,school
-112828,school
-112829,school
+112828,work
+112829,work
 112830,work
 112831,work
 112832,work
@@ -113035,9 +113035,9 @@
 113034,work
 113035,work
 113036,work
-113037,work
-113038,work
-113039,work
+113037,shopping
+113038,shopping
+113039,shopping
 113040,shopping
 113041,shopping
 113042,shopping
@@ -113095,9 +113095,9 @@
 113094,shopping
 113095,shopping
 113096,shopping
-113097,shopping
-113098,shopping
-113099,shopping
+113097,work
+113098,work
+113099,work
 113100,work
 113101,work
 113102,work
@@ -113364,10 +113364,10 @@
 113363,work
 113364,work
 113365,work
-113366,work
-113367,work
-113368,work
-113369,work
+113366,school
+113367,school
+113368,school
+113369,school
 113370,school
 113371,school
 113372,school
@@ -113424,9 +113424,9 @@
 113423,school
 113424,school
 113425,school
-113426,school
-113427,school
-113428,school
+113426,home
+113427,home
+113428,home
 113429,home
 113430,home
 113431,home
@@ -114207,7 +114207,7 @@
 114206,home
 114207,home
 114208,home
-114209,home
+114209,school
 114210,school
 114211,school
 114212,school
@@ -114864,7 +114864,7 @@
 114863,school
 114864,school
 114865,school
-114866,home
+114866,school
 114867,home
 114868,home
 114869,home
@@ -115647,7 +115647,7 @@
 115646,home
 115647,home
 115648,home
-115649,school
+115649,home
 115650,school
 115651,school
 115652,school
@@ -115975,7 +115975,7 @@
 115974,shopping
 115975,shopping
 115976,shopping
-115977,shopping
+115977,work
 115978,work
 115979,work
 115980,work
@@ -116304,7 +116304,7 @@
 116303,school
 116304,school
 116305,school
-116306,school
+116306,home
 116307,home
 116308,home
 116309,home
@@ -117146,7 +117146,7 @@
 117145,school
 117146,school
 117147,school
-117148,work
+117148,school
 117149,work
 117150,work
 117151,work
@@ -118587,7 +118587,7 @@
 118586,school
 118587,school
 118588,school
-118589,work
+118589,school
 118590,work
 118591,work
 118592,work
@@ -119125,7 +119125,7 @@
 119124,work
 119125,work
 119126,work
-119127,school
+119127,work
 119128,school
 119129,school
 119130,school
@@ -119185,7 +119185,7 @@
 119184,school
 119185,school
 119186,school
-119187,home
+119187,school
 119188,home
 119189,home
 119190,home
@@ -119967,7 +119967,7 @@
 119966,home
 119967,home
 119968,home
-119969,school
+119969,home
 119970,school
 119971,school
 119972,school
@@ -120026,7 +120026,7 @@
 120025,school
 120026,school
 120027,school
-120028,work
+120028,school
 120029,work
 120030,work
 120031,work
@@ -120235,8 +120235,8 @@
 120234,work
 120235,work
 120236,work
-120237,shopping
-120238,shopping
+120237,work
+120238,work
 120239,shopping
 120240,shopping
 120241,shopping
@@ -120295,7 +120295,7 @@
 120294,shopping
 120295,shopping
 120296,shopping
-120297,work
+120297,shopping
 120298,work
 120299,work
 120300,work
@@ -121677,7 +121677,7 @@
 121676,work
 121677,work
 121678,work
-121679,shopping
+121679,work
 121680,shopping
 121681,shopping
 121682,shopping
@@ -121737,7 +121737,7 @@
 121736,shopping
 121737,shopping
 121738,shopping
-121739,work
+121739,shopping
 121740,work
 121741,work
 121742,work
@@ -122006,7 +122006,7 @@
 122005,work
 122006,work
 122007,work
-122008,school
+122008,work
 122009,school
 122010,school
 122011,school
@@ -122065,7 +122065,7 @@
 122064,school
 122065,school
 122066,school
-122067,home
+122067,school
 122068,home
 122069,home
 122070,home
@@ -122847,7 +122847,7 @@
 122846,home
 122847,home
 122848,home
-122849,home
+122849,school
 122850,school
 122851,school
 122852,school
@@ -122906,8 +122906,8 @@
 122905,school
 122906,school
 122907,school
-122908,school
-122909,school
+122908,work
+122909,work
 122910,work
 122911,work
 122912,work
@@ -123115,9 +123115,9 @@
 123114,work
 123115,work
 123116,work
-123117,work
-123118,work
-123119,work
+123117,shopping
+123118,shopping
+123119,shopping
 123120,shopping
 123121,shopping
 123122,shopping
@@ -123175,9 +123175,9 @@
 123174,shopping
 123175,shopping
 123176,shopping
-123177,shopping
-123178,shopping
-123179,shopping
+123177,work
+123178,work
+123179,work
 123180,work
 123181,work
 123182,work
@@ -123444,10 +123444,10 @@
 123443,work
 123444,work
 123445,work
-123446,work
-123447,work
-123448,work
-123449,work
+123446,school
+123447,school
+123448,school
+123449,school
 123450,school
 123451,school
 123452,school
@@ -123503,11 +123503,11 @@
 123502,school
 123503,school
 123504,school
-123505,school
-123506,school
-123507,school
-123508,school
-123509,school
+123505,home
+123506,home
+123507,home
+123508,home
+123509,home
 123510,home
 123511,home
 123512,home
@@ -124347,7 +124347,7 @@
 124346,school
 124347,school
 124348,school
-124349,school
+124349,work
 124350,work
 124351,work
 124352,work
@@ -124557,7 +124557,7 @@
 124556,work
 124557,work
 124558,work
-124559,work
+124559,shopping
 124560,shopping
 124561,shopping
 124562,shopping
@@ -124617,7 +124617,7 @@
 124616,shopping
 124617,shopping
 124618,shopping
-124619,shopping
+124619,work
 124620,work
 124621,work
 124622,work
@@ -124887,7 +124887,7 @@
 124886,work
 124887,work
 124888,work
-124889,work
+124889,school
 124890,school
 124891,school
 124892,school
@@ -124946,8 +124946,8 @@
 124945,school
 124946,school
 124947,school
-124948,school
-124949,school
+124948,home
+124949,home
 124950,home
 124951,home
 124952,home
@@ -125727,7 +125727,7 @@
 125726,home
 125727,home
 125728,home
-125729,home
+125729,school
 125730,school
 125731,school
 125732,school
@@ -125786,7 +125786,7 @@
 125785,school
 125786,school
 125787,school
-125788,school
+125788,work
 125789,work
 125790,work
 125791,work
@@ -125995,8 +125995,8 @@
 125994,work
 125995,work
 125996,work
-125997,work
-125998,work
+125997,shopping
+125998,shopping
 125999,shopping
 126000,shopping
 126001,shopping
@@ -126055,8 +126055,8 @@
 126054,shopping
 126055,shopping
 126056,shopping
-126057,shopping
-126058,shopping
+126057,work
+126058,work
 126059,work
 126060,work
 126061,work
@@ -126324,9 +126324,9 @@
 126323,work
 126324,work
 126325,work
-126326,work
-126327,work
-126328,work
+126326,school
+126327,school
+126328,school
 126329,school
 126330,school
 126331,school
@@ -126384,8 +126384,8 @@
 126383,school
 126384,school
 126385,school
-126386,school
-126387,school
+126386,home
+126387,home
 126388,home
 126389,home
 126390,home
@@ -127497,7 +127497,7 @@
 127496,shopping
 127497,shopping
 127498,shopping
-127499,work
+127499,shopping
 127500,work
 127501,work
 127502,work
@@ -127766,7 +127766,7 @@
 127765,work
 127766,work
 127767,work
-127768,school
+127768,work
 127769,school
 127770,school
 127771,school
@@ -127826,7 +127826,7 @@
 127825,school
 127826,school
 127827,school
-127828,home
+127828,school
 127829,home
 127830,home
 127831,home
@@ -128607,7 +128607,7 @@
 128606,home
 128607,home
 128608,home
-128609,school
+128609,home
 128610,school
 128611,school
 128612,school
@@ -128935,7 +128935,7 @@
 128934,shopping
 128935,shopping
 128936,shopping
-128937,shopping
+128937,work
 128938,work
 128939,work
 128940,work
@@ -129204,8 +129204,8 @@
 129203,work
 129204,work
 129205,work
-129206,work
-129207,work
+129206,school
+129207,school
 129208,school
 129209,school
 129210,school
@@ -129264,8 +129264,8 @@
 129263,school
 129264,school
 129265,school
-129266,school
-129267,school
+129266,home
+129267,home
 129268,home
 129269,home
 129270,home
@@ -130047,7 +130047,7 @@
 130046,home
 130047,home
 130048,home
-130049,school
+130049,home
 130050,school
 130051,school
 130052,school
@@ -130316,7 +130316,7 @@
 130315,work
 130316,work
 130317,work
-130318,shopping
+130318,work
 130319,shopping
 130320,shopping
 130321,shopping
@@ -130376,7 +130376,7 @@
 130375,shopping
 130376,shopping
 130377,shopping
-130378,work
+130378,shopping
 130379,work
 130380,work
 130381,work
@@ -130646,7 +130646,7 @@
 130645,work
 130646,work
 130647,work
-130648,school
+130648,work
 130649,school
 130650,school
 130651,school
@@ -130706,7 +130706,7 @@
 130705,school
 130706,school
 130707,school
-130708,home
+130708,school
 130709,home
 130710,home
 130711,home
@@ -131487,7 +131487,7 @@
 131486,home
 131487,home
 131488,home
-131489,school
+131489,home
 131490,school
 131491,school
 131492,school
@@ -131547,7 +131547,7 @@
 131546,school
 131547,school
 131548,school
-131549,work
+131549,school
 131550,work
 131551,work
 131552,work
@@ -131756,8 +131756,8 @@
 131755,work
 131756,work
 131757,work
-131758,shopping
-131759,shopping
+131758,work
+131759,work
 131760,shopping
 131761,shopping
 131762,shopping
@@ -131816,7 +131816,7 @@
 131815,shopping
 131816,shopping
 131817,shopping
-131818,work
+131818,shopping
 131819,work
 131820,work
 131821,work
@@ -132086,7 +132086,7 @@
 132085,work
 132086,work
 132087,work
-132088,school
+132088,work
 132089,school
 132090,school
 132091,school
@@ -132146,7 +132146,7 @@
 132145,school
 132146,school
 132147,school
-132148,home
+132148,school
 132149,home
 132150,home
 132151,home
@@ -132927,7 +132927,7 @@
 132926,home
 132927,home
 132928,home
-132929,school
+132929,home
 132930,school
 132931,school
 132932,school
@@ -132986,7 +132986,7 @@
 132985,school
 132986,school
 132987,school
-132988,work
+132988,school
 132989,work
 132990,work
 132991,work
@@ -133195,8 +133195,8 @@
 133194,work
 133195,work
 133196,work
-133197,shopping
-133198,shopping
+133197,work
+133198,work
 133199,shopping
 133200,shopping
 133201,shopping
@@ -133254,9 +133254,9 @@
 133253,shopping
 133254,shopping
 133255,shopping
-133256,work
-133257,work
-133258,work
+133256,shopping
+133257,shopping
+133258,shopping
 133259,work
 133260,work
 133261,work
@@ -133523,9 +133523,9 @@
 133522,work
 133523,work
 133524,work
-133525,school
-133526,school
-133527,school
+133525,work
+133526,work
+133527,work
 133528,school
 133529,school
 133530,school
@@ -133582,9 +133582,9 @@
 133581,school
 133582,school
 133583,school
-133584,home
-133585,home
-133586,home
+133584,school
+133585,school
+133586,school
 133587,home
 133588,home
 133589,home
@@ -134367,7 +134367,7 @@
 134366,home
 134367,home
 134368,home
-134369,home
+134369,school
 134370,school
 134371,school
 134372,school
@@ -134426,8 +134426,8 @@
 134425,school
 134426,school
 134427,school
-134428,school
-134429,school
+134428,work
+134429,work
 134430,work
 134431,work
 134432,work
@@ -134635,8 +134635,8 @@
 134634,work
 134635,work
 134636,work
-134637,work
-134638,work
+134637,shopping
+134638,shopping
 134639,shopping
 134640,shopping
 134641,shopping
@@ -134695,7 +134695,7 @@
 134694,shopping
 134695,shopping
 134696,shopping
-134697,shopping
+134697,work
 134698,work
 134699,work
 134700,work
@@ -135807,7 +135807,7 @@
 135806,home
 135807,home
 135808,home
-135809,school
+135809,home
 135810,school
 135811,school
 135812,school
@@ -135866,7 +135866,7 @@
 135865,school
 135866,school
 135867,school
-135868,work
+135868,school
 135869,work
 135870,work
 135871,work
@@ -136075,8 +136075,8 @@
 136074,work
 136075,work
 136076,work
-136077,shopping
-136078,shopping
+136077,work
+136078,work
 136079,shopping
 136080,shopping
 136081,shopping
@@ -136135,8 +136135,8 @@
 136134,shopping
 136135,shopping
 136136,shopping
-136137,work
-136138,work
+136137,shopping
+136138,shopping
 136139,work
 136140,work
 136141,work
@@ -136404,8 +136404,8 @@
 136403,work
 136404,work
 136405,work
-136406,school
-136407,school
+136406,work
+136407,work
 136408,school
 136409,school
 136410,school
@@ -136464,7 +136464,7 @@
 136463,school
 136464,school
 136465,school
-136466,home
+136466,school
 136467,home
 136468,home
 136469,home
@@ -137247,7 +137247,7 @@
 137246,home
 137247,home
 137248,home
-137249,school
+137249,home
 137250,school
 137251,school
 137252,school
@@ -137306,8 +137306,8 @@
 137305,school
 137306,school
 137307,school
-137308,work
-137309,work
+137308,school
+137309,school
 137310,work
 137311,work
 137312,work
@@ -137516,7 +137516,7 @@
 137515,work
 137516,work
 137517,work
-137518,shopping
+137518,work
 137519,shopping
 137520,shopping
 137521,shopping
@@ -137575,7 +137575,7 @@
 137574,shopping
 137575,shopping
 137576,shopping
-137577,work
+137577,shopping
 137578,work
 137579,work
 137580,work
@@ -137904,7 +137904,7 @@
 137903,school
 137904,school
 137905,school
-137906,school
+137906,home
 137907,home
 137908,home
 137909,home
@@ -138747,7 +138747,7 @@
 138746,school
 138747,school
 138748,school
-138749,school
+138749,work
 138750,work
 138751,work
 138752,work
@@ -139345,7 +139345,7 @@
 139344,school
 139345,school
 139346,school
-139347,school
+139347,home
 139348,home
 139349,home
 139350,home
@@ -140127,7 +140127,7 @@
 140126,home
 140127,home
 140128,home
-140129,home
+140129,school
 140130,school
 140131,school
 140132,school
@@ -140187,7 +140187,7 @@
 140186,school
 140187,school
 140188,school
-140189,school
+140189,work
 140190,work
 140191,work
 140192,work
@@ -140726,7 +140726,7 @@
 140725,work
 140726,work
 140727,work
-140728,school
+140728,work
 140729,school
 140730,school
 140731,school
@@ -141626,7 +141626,7 @@
 141625,school
 141626,school
 141627,school
-141628,work
+141628,school
 141629,work
 141630,work
 141631,work
@@ -141835,8 +141835,8 @@
 141834,work
 141835,work
 141836,work
-141837,shopping
-141838,shopping
+141837,work
+141838,work
 141839,shopping
 141840,shopping
 141841,shopping
@@ -141894,8 +141894,8 @@
 141893,shopping
 141894,shopping
 141895,shopping
-141896,work
-141897,work
+141896,shopping
+141897,shopping
 141898,work
 141899,work
 141900,work
@@ -142164,8 +142164,8 @@
 142163,work
 142164,work
 142165,work
-142166,school
-142167,school
+142166,work
+142167,work
 142168,school
 142169,school
 142170,school
@@ -142223,8 +142223,8 @@
 142222,school
 142223,school
 142224,school
-142225,home
-142226,home
+142225,school
+142226,school
 142227,home
 142228,home
 142229,home
@@ -143007,7 +143007,7 @@
 143006,home
 143007,home
 143008,home
-143009,home
+143009,school
 143010,school
 143011,school
 143012,school
@@ -143336,7 +143336,7 @@
 143335,shopping
 143336,shopping
 143337,shopping
-143338,work
+143338,shopping
 143339,work
 143340,work
 143341,work
@@ -144447,7 +144447,7 @@
 144446,home
 144447,home
 144448,home
-144449,home
+144449,school
 144450,school
 144451,school
 144452,school
@@ -144716,7 +144716,7 @@
 144715,work
 144716,work
 144717,work
-144718,shopping
+144718,work
 144719,shopping
 144720,shopping
 144721,shopping
@@ -144775,7 +144775,7 @@
 144774,shopping
 144775,shopping
 144776,shopping
-144777,work
+144777,shopping
 144778,work
 144779,work
 144780,work
@@ -145045,7 +145045,7 @@
 145044,work
 145045,work
 145046,work
-145047,school
+145047,work
 145048,school
 145049,school
 145050,school
@@ -145104,8 +145104,8 @@
 145103,school
 145104,school
 145105,school
-145106,home
-145107,home
+145106,school
+145107,school
 145108,home
 145109,home
 145110,home
