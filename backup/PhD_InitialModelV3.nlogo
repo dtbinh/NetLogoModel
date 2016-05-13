@@ -68,6 +68,7 @@ people-own [
   schedule
   homecorxy
   counterMobile                    ;for the mobile tower agents to identify the people agents. they have different id numbers
+  counterSM                        ;for social media identifier
   ;  workstarts
   ;  workinghours
   workplacecorxy
@@ -121,6 +122,11 @@ to setup
   ;setup mobile phone towers
   if mobiletowerdata? [
     setup-mobiletowers
+  ]
+
+  ;setup social media data
+  if socialmedia_data? [
+    setup-socialmedia
   ]
 
   ;input/output initialisation
@@ -196,6 +202,7 @@ to setup-population
   ;let home_IDlocation []
   let i 0
   let k 0
+  let m 0
   set-default-shape people "person"
 
   while [i < nb-people] [
@@ -204,6 +211,7 @@ to setup-population
         set IDnum who
         set tempnum who
         set counterMobile k
+        set counterSM m
         set color red
         set size 1
         set speedcar car-speed
@@ -248,6 +256,7 @@ to setup-population
         ;print home_location
       ]
       set k k + 1
+      set m m + 1
     ]
 
     ; create destination agents for works
@@ -431,6 +440,10 @@ to setup-mobiletowers
   ]
 end
 
+to setup-socialmedia
+
+end
+
 to setup-fileIO
 
 if file-exists? "mobiletowers.txt" [
@@ -441,6 +454,9 @@ if file-exists? "agentdata.txt" [
   file-close-all
   file-delete "agentdata.txt"]
 
+if file-exists? "socialmedia.txt" [
+  file-close-all
+  file-delete "socialmedia.txt"]
 ;file-open "mobiletowers.txt"
 
 end
@@ -455,11 +471,6 @@ to go
   let origin []
   let desti []
   let status []   ;the status of "move" or "stop". Move: 1; Stop:0
-                  ;send-car
-                  ;check if cars can move whole distance
-                  ;ifelse i < length(list-waypointsall) - 2 [
-                  ;  set i i + 1
-                  ;  set c1 item (i + 1) waypoint-all;list-waypointsall
   ;if ticks >= 14400 [ stop ]
 
   if ticks = 0 [random-seed 100]
@@ -516,7 +527,11 @@ to go
 
     ;data simulator
     if mobiletowerdata? [
-      datacollection-mobiletowers status
+      datacollection-mobiletowers
+    ]
+
+     if socialmedia_data? [
+      datacollection-socialmedia
     ]
 
     ;check zone location
@@ -531,22 +546,6 @@ to go
     ifelse distance min-one-of mobiletowers [distance myself] <= [radius] of min-one-of mobiletowers [distance myself] [
       file-write [who] of min-one-of mobiletowers [distance myself] FILE-TYPE "\n" ] [
       file-write "" FILE-TYPE "\n"]
-
-;    ifelse any? mobiletowers in-radius ([radius] of one-of mobiletowers) [
-;      ifelse count mobiletowers in-radius ([radius] of one-of mobiletowers) > 1 [
-;        ; if a turtle is covered by two toweres, find the nearest one
-;        ask min-one-of mobiletowers [distance myself] [
-;
-;          file-write who FILE-TYPE "\n"
-;        ]
-;      ] [
-;      ;print count mobiletowers in-radius ([radius] of one-of mobiletowers)
-;      ask mobiletowers in-radius ([radius] of one-of mobiletowers) [ ;assign a mobile tower code
-;        file-write who FILE-TYPE "\n"
-;      ]
-;      ]] [
-;    file-write "" FILE-TYPE "\n"
-;      ]
 
     file-close-all
   ]
@@ -563,7 +562,7 @@ end
 
 
 
-to datacollection-mobiletowers [status]
+to datacollection-mobiletowers
   ;test if the agent is going to use the phone
 
   let temp []
@@ -580,29 +579,25 @@ to datacollection-mobiletowers [status]
       file-write time:show cur_time "yyyy-MM-dd HH:mm" file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
       file-close-all
       ]] [ ]
-
-;    ifelse count mobiletowers in-radius ([radius] of one-of mobiletowers) > 1 [
-;      ; if a turtle is covered by two toweres, find the nearest one
-;      ask min-one-of mobiletowers [distance myself] [
-;        ;current netlogo tables only take two values
-;        ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
-;        file-open "mobiletowers.txt"
-;        ;total minutes; number of days; minutes of the day; agent id; mobile tower's people's id; mobile tower's location (zone); mobile tower's signal radius; mobile tower's own id; xcor; ycor
-;        file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
-;        file-close-all
-;      ]
-;    ][
-;    ask mobiletowers in-radius ([radius] of one-of mobiletowers) [ ;might need to update this if towers have their own unique radius
-;                                                                   ;current netlogo tables only take two values
-;                                                                   ;table:put datarecords (word ticks "/" temp2) (word temp "/" radius "/" xcor "/" ycor "/")
-;      file-open "mobiletowers.txt"
-;      ;total minutes; number of days; minutes of the day; agent id; mobile tower's people's id; mobile tower's location (zone); mobile tower's signal radius; mobile tower's own id; xcor; ycor
-;      file-write ticks file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write radius file-write who file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
-;      file-close-all
-;    ]
-;    ]
   ]
 
+end
+
+to datacollection-socialmedia
+  ;check if the agent is going to use social media
+
+  let temp []
+  let temp2 []
+
+  set temp counterSM
+  set temp2 who             ;agent id for the travelling person
+
+  if random-float 1 <= (avg_num_sm_usage / 1440) [
+
+    file-open "socialmedia.txt"
+    file-write time:show cur_time "yyyy-MM-dd HH:mm" file-write int(ticks / 1440) file-write (ticks mod 1440) file-write temp2 file-write temp file-write zone file-write xcor file-write ycor FILE-TYPE "\n"   ;file-print will add a return at the end of the column
+    file-close-all
+  ]
 end
 
 
@@ -890,7 +885,7 @@ INPUTBOX
 205
 122
 nb-people
-1
+2
 1
 0
 Number
@@ -979,6 +974,17 @@ INPUTBOX
 183
 avg_call_duration_mins
 2
+1
+0
+Number
+
+INPUTBOX
+990
+56
+1145
+116
+avg_num_sm_usage
+5
 1
 0
 Number

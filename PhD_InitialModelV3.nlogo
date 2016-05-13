@@ -5,8 +5,9 @@ extensions [nw table CSV cf time]
 
 breed [waypoints waypoint]
 breed [nodes node]
-breed [LocResidentials LocResidential]
 breed [people person]
+;breed [zones zone]
+breed [LocResidentials LocResidential]
 breed [LocWorks LocWork]
 breed [Locshops Locshop]
 breed [Locschools Locschool]
@@ -14,17 +15,22 @@ breed [gpsdevices gpsdevice]                ;agents that are capable of collecti
 breed [mobiletowers mobiletower]            ;mobile tower agents that are capable of collecting mobile phone data
 
 globals [
-  residential   ;; agentset containing the patches that are residential buildings
-  shopping      ;; agentset containing the patches that are shopping landuse
-  workplace     ;; agentset containing the patches that are workplace buildings
-  school        ;; agentset containing the patches that are school buildings
+;  residential   ;; agentset containing the patches that are residential buildings
+;  shopping      ;; agentset containing the patches that are shopping landuse
+;  workplace     ;; agentset containing the patches that are workplace buildings
+;  school        ;; agentset containing the patches that are school buildings
   cur_time      ;; give each tick a time so that other features can be extracted
-
+  zoneid        ;;
+  color-list
+  color-used
 ]
 
 waypoints-own [
 
 ]
+
+;zones-own[
+;]
 
 LocResidentials-own [
 
@@ -49,10 +55,6 @@ links-own [
 
 
 mobiletowers-own [
-  ;locxcor
-  ;locycor
-  ;dates
-  ;times
   datarecords
   radius
   zone
@@ -69,8 +71,6 @@ people-own [
   homecorxy
   counterMobile                    ;for the mobile tower agents to identify the people agents. they have different id numbers
   counterSM                        ;for social media identifier
-  ;  workstarts
-  ;  workinghours
   workplacecorxy
   shopplacecorxy
   schoolcorxy
@@ -81,15 +81,19 @@ people-own [
   list-waypointsall                ;save the list of waypoints (lists)
   waypoint-all                     ;save the waypoints (turtles)
   speedcar                         ;save speed of moving (car)
-  WorkID                           ;save work location ID nnumber (ID for the turtle)
-  HomeID                           ;save house location ID nnumber (ID for the turtle)
-  ShopID                           ;save shopping location ID nnumber (ID for the turtle)
-  SchoolID                         ;save school location ID nuumber (ID for the turtle)
+  homezone                           ;save work location ID nnumber (ID for the turtle)
+  workzone                       ;save house location ID nnumber (ID for the turtle)
+  shopzone                           ;save shopping location ID nnumber (ID for the turtle)
+  schoolzone                         ;save school location ID nuumber (ID for the turtle)
+  WorkID
+  ShopID
+  SchoolID
+  HomeID
   endofroute?                      ;reached destination?
   remainingdist                    ;distance remaining to the next node
   nextwaypoint                     ;next way point for travlling
   dummy                            ;a counter which is used during the process
-  zone                             ;current zone: 1: residential; 2:work; 3:shop; 4:school
+  zone                          ;current zone: 1: residential; 2:work; 3:shop; 4:school
 
 ]
 
@@ -100,10 +104,10 @@ to setup
   random-seed 5
   set-default-shape nodes "dot"
   set-default-shape waypoints "dot"
-  set-default-shape LocResidentials "house"
-  set-default-shape LocWorks "house"
-  set-default-shape Locshops "house"
-  set-default-shape Locschools "house"
+;  set-default-shape LocResidentials "house"
+;  set-default-shape LocWorks "house"
+;  set-default-shape Locshops "house"
+;  set-default-shape Locschools "house"
   set-default-shape mobiletowers "star"
   ;set-default-shape cars "car"
 
@@ -138,25 +142,67 @@ to setup
   reset-ticks
 end
 
+to-report setup-pop-color  ; get next color from global color list and remove it
+  let $color first color-list
+  set color-list but-first color-list
+  set color-used sentence color-used $color
+  report $color
+end
+
+to-report cross [ #list-1 #list-2 ]  ; list of all pairs from two lists
+  let $cross []
+  foreach #list-2
+  [ let $2 ?
+    set $cross sentence $cross map [list ? $2] #list-1
+  ]
+  report $cross
+end
+
+to setup-color-area [ #color ] ; by patch, recursive
+  ; assumes patches in area are black, borders and given color are not
+  set pcolor #color
+  ask neighbors with [pcolor = 0] [ setup-color-area #color ]
+end
+
+to-report create-list [listname startnum endnum step pre]
+  if startnum <= endnum [
+    let $list []
+    set $list sentence listname startnum
+    set listname create-list $list (precision (startnum + step) pre) endnum step pre
+  ]
+  report listname
+end
 
 to setup-landuse
   ;setup landuse based on different colors
+  let roads []
+  let roads_a []
+  let roads_b []
+  set color-list []
+  set color-used []
+  set color-list create-list color-list 1 139 0.1 2
+  let x-roads zones-x  ; number of roads crossing x-axis
+  let y-roads zones-y  ; number of roads crossing y-axis
+  let x-step round(world-width / x-roads)
+  let y-step round(world-height / y-roads)
+  let x-list n-values x-roads [? * x-step]
+  let y-list n-values y-roads [? * y-step]
+  set roads patches with
+    [member? pxcor x-list or member? pycor y-list]
+  ask roads [ set pcolor 0.99 ]  ; color roads almost black
+  ; list locs of 1 patch in each area, the "seeds" for coloring
+  let area-list cross  map [? + 1] x-list  map [? + 1] y-list
+  ; color each area with one of base colors
+  foreach area-list
+    [ ask patch first ? last ? [ setup-color-area setup-pop-color ] ]
 
-  set workplace patches with
-    [pycor >= 0 and pxcor < 0]
-  ask workplace [ set pcolor 25 ]
+  ; above use roads with black colors as separattion to draw zones with different colors
+  ; below change roads back to the adjacent zone colors
+  set roads_a roads with [max [pcolor] of neighbors4 != min [pcolor] of neighbors4]
+  set roads_b roads with [max [pcolor] of neighbors4 = min [pcolor] of neighbors4]
+  ask roads_a [set pcolor max [pcolor] of neighbors4]
+  ask roads_b [set pcolor max [pcolor] of neighbors4]
 
-  set residential patches with
-    [pycor <= 0 and pxcor >= 0]
-  ask residential [ set pcolor 15 ]
-
-  set shopping patches with
-    [pycor > 0 and pxcor >= 0]
-  ask shopping [ set pcolor 35 ]
-
-  set school patches with
-    [pycor < 0 and pxcor < 0]
-  ask school [ set pcolor 45 ]
 end
 
 to setup-roadnetwork
@@ -194,7 +240,8 @@ end
 to setup-population
 
   ;workplacecorxy
-
+  let population []
+  let currentperson []
   let workxcor []
   let workycor []
   let temp []
@@ -205,8 +252,12 @@ to setup-population
   let m 0
   set-default-shape people "person"
 
-  while [i < nb-people] [
-    ask one-of residential [
+  set population csv:from-file "population.csv"; file-read-line
+  file-close
+
+  foreach population [
+    set currentperson ?
+    ask one-of patches with [pcolor = item 1 currentperson] [
       sprout-people 1 [
         set IDnum who
         set tempnum who
@@ -216,27 +267,30 @@ to setup-population
         set size 1
         set speedcar car-speed
         set homecorxy list (pxcor) (pycor)
-        set currentlocation "home"
+        set currentlocation item 1 currentperson
         set endofroute? true
-        set zone 1
+        set homezone item 1 currentperson
+        set workzone item 2 currentperson
+        set shopzone item 3 currentperson
+        set schoolzone item 4 currentperson
         ;set workstarts 480 ; 8am in the morning
         ;set workinghours 540 ;working 9hrs a day
         ;choose a random place in the business area as the working place
-        ask one-of workplace [
+        ask one-of patches with [pcolor = item 2 currentperson] [
           set workxcor pxcor
           set workycor pycor
         ]
         set workplacecorxy list workxcor workycor
 
         ;choose the shopping location
-        ask one-of shopping [
+        ask one-of patches with [pcolor = item 3 currentperson] [
           set workxcor pxcor
           set workycor pycor
         ]
         set shopplacecorxy list workxcor workycor
 
         ;choose the school
-        ask one-of school [
+        ask one-of patches with [pcolor = item 4 currentperson] [
           set workxcor pxcor
           set workycor pycor
         ]
@@ -313,8 +367,8 @@ to setup-population
 
     set i i + 1
     set temp []
+
   ]
-  ;  set home_location lput [xcor] of
 
 end
 
@@ -377,10 +431,10 @@ to hat-mobiletowers [zones]
   let disty []
 
   ; get range of the zone
-  set topleftx min [pxcor] of zones
-  set toplefty max [pycor] of zones
-  set bottomrightx max [pxcor] of zones
-  set bottomrighty min [pycor] of zones
+  set topleftx min [pxcor] of patches with [pcolor = zones]
+  set toplefty max [pycor] of patches with [pcolor = zones]
+  set bottomrightx max [pxcor] of patches with [pcolor = zones]
+  set bottomrighty min [pycor] of patches with [pcolor = zones]
 
   ; now calculate middle point of the zone
   set towerx (topleftx + bottomrightx) / 2
@@ -409,10 +463,12 @@ to setup-mobiletowers
   ;workplace
   ;min [pxcor] of workplace
   ;min [pycor] of workplace
-  hat-mobiletowers residential
-  hat-mobiletowers workplace
-  hat-mobiletowers shopping
-  hat-mobiletowers school
+
+  foreach color-used [
+    hat-mobiletowers ?]
+;  hat-mobiletowers workplace
+;  hat-mobiletowers shopping
+;  hat-mobiletowers school
 
   ;set hordistance max-pxcor - min-pxcor
   ;;currently all mobile towers have the same cover range
@@ -483,17 +539,19 @@ to go
     ;print endofroute?
     ;check if the schedule requests a change of location
     if loc != currentlocation [
+      print loc
+      print currentlocation
       (cf:match currentlocation
-        cf:= "home" [set origin HomeID ask LocResidentials [hide-turtle ]]
-      cf:= "work" [set origin WorkID ask LocWorks [hide-turtle ]]
-      cf:= "shopping" [set origin ShopID ask Locshops [hide-turtle ]]
-      cf:= "school" [set origin SchoolID ask Locschools [hide-turtle ]]
+        cf:= homezone [set origin HomeID ask LocResidentials [hide-turtle ]]
+      cf:= workzone [set origin WorkID ask LocWorks [hide-turtle ]]
+      cf:= shopzone [set origin ShopID ask Locshops [hide-turtle ]]
+      cf:= schoolzone [set origin SchoolID ask Locschools [hide-turtle ]]
       )
       (cf:cond
-        cf:case [loc = "home"] [set desti HomeID ask LocResidentials [show-turtle ]]
-      cf:case [loc = "work"] [set desti WorkID ask LocWorks [show-turtle ]]
-      cf:case [loc = "shopping"] [set desti ShopID ask Locshops [show-turtle ]]
-      cf:case [loc = "school"] [set desti SchoolID ask Locschools [show-turtle ]]
+        cf:case [loc = homezone] [set desti HomeID ask LocResidentials [show-turtle ]]
+      cf:case [loc = workzone] [set desti WorkID ask LocWorks [show-turtle ]]
+      cf:case [loc = shopzone] [set desti ShopID ask Locshops [show-turtle ]]
+      cf:case [loc = schoolzone] [set desti SchoolID ask Locschools [show-turtle ]]
       )
       print origin
       print desti
@@ -801,8 +859,8 @@ GRAPHICS-WINDOW
 10
 696
 512
-40
-40
+-1
+-1
 5.815
 1
 10
@@ -813,10 +871,10 @@ GRAPHICS-WINDOW
 0
 0
 1
--40
-40
--40
-40
+0
+80
+0
+80
 1
 1
 1
@@ -842,9 +900,9 @@ NIL
 
 SWITCH
 10
-130
+199
 187
-163
+232
 Show_Names_Nodes?
 Show_Names_Nodes?
 1
@@ -870,20 +928,20 @@ NIL
 
 SWITCH
 11
-174
+243
 190
-207
+276
 Show_Names_people?
 Show_Names_people?
-1
+0
 1
 -1000
 
 INPUTBOX
 129
-62
+131
 205
-122
+191
 nb-people
 2
 1
@@ -892,9 +950,9 @@ Number
 
 INPUTBOX
 11
-62
+131
 99
-122
+191
 grid-size
 21
 1
@@ -903,9 +961,9 @@ Number
 
 INPUTBOX
 10
-221
+290
 93
-281
+350
 car-speed
 1
 1
@@ -985,6 +1043,28 @@ INPUTBOX
 116
 avg_num_sm_usage
 5
+1
+0
+Number
+
+INPUTBOX
+10
+61
+99
+121
+zones-x
+2
+1
+0
+Number
+
+INPUTBOX
+117
+60
+207
+120
+zones-y
+2
 1
 0
 Number
